@@ -1,0 +1,318 @@
+{%- style -%}
+  #shopify-section-{{ section.id }} {
+    --section-padding-top: {{ section.settings.padding_top }}px;
+    --section-padding-bottom: {{ section.settings.padding_bottom }}px;
+  }
+
+  .coverage-calc {
+    max-width: 640px;
+    margin: 0 auto;
+  }
+
+  .coverage-calc__form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  @media screen and (max-width: 749px) {
+    .coverage-calc__form {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+  }
+
+  .coverage-calc__field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .coverage-calc__field label {
+    font-weight: 600;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .coverage-calc__field input {
+    padding: 0.75rem 1rem;
+    border: 1px solid rgba(var(--color-foreground), 0.2);
+    border-radius: 4px;
+    font-size: 1rem;
+    background: transparent;
+    color: rgb(var(--color-foreground));
+    transition: border-color 0.2s;
+  }
+
+  .coverage-calc__field input:focus {
+    outline: none;
+    border-color: rgb(var(--color-foreground));
+  }
+
+  .coverage-calc__unit-toggle {
+    display: flex;
+    gap: 0.5rem;
+    grid-column: 1 / -1;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+  }
+
+  .coverage-calc__unit-btn {
+    padding: 0.4rem 1rem;
+    border: 1px solid rgba(var(--color-foreground), 0.2);
+    background: transparent;
+    color: rgb(var(--color-foreground));
+    cursor: pointer;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: all 0.2s;
+  }
+
+  .coverage-calc__unit-btn.active {
+    background: rgb(var(--color-foreground));
+    color: rgb(var(--color-background));
+    border-color: rgb(var(--color-foreground));
+  }
+
+  .coverage-calc__result {
+    text-align: center;
+    padding: 2rem;
+    border: 2px solid rgba(var(--color-foreground), 0.1);
+    border-radius: 8px;
+    display: none;
+  }
+
+  .coverage-calc__result.visible {
+    display: block;
+  }
+
+  .coverage-calc__panels-needed {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 0.25rem;
+  }
+
+  .coverage-calc__panels-label {
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    opacity: 0.7;
+    margin-bottom: 1rem;
+  }
+
+  .coverage-calc__cost {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+
+  .coverage-calc__adhesive {
+    font-size: 0.95rem;
+    opacity: 0.8;
+    margin-bottom: 1.5rem;
+  }
+
+  .coverage-calc__add-btn {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    transition: opacity 0.2s;
+  }
+
+  .coverage-calc__add-btn:hover {
+    opacity: 0.85;
+  }
+
+  .coverage-calc__note {
+    margin-top: 1rem;
+    font-size: 0.75rem;
+    opacity: 0.6;
+  }
+{%- endstyle -%}
+
+<div class="section--padding{% if section.settings.show_divider %} section--divider{% endif %}">
+  <div class="page-width{% if section.settings.narrow %} page-width--inner{% endif %}">
+    <div class="coverage-calc">
+      <div class="title-wrapper {{ section.settings.heading_alignment }}">
+        <{{ section.settings.heading_tag }} class="title {{ section.settings.heading_size }}">
+          {{ section.settings.heading }}
+        </{{ section.settings.heading_tag }}>
+        {%- if section.settings.subheading != blank -%}
+          <p class="typeset">{{ section.settings.subheading }}</p>
+        {%- endif -%}
+      </div>
+
+      <coverage-calculator
+        data-panel-area="{{ section.settings.panel_area_sqm }}"
+        data-adhesive-per-tube="{{ section.settings.adhesive_panels_per_tube }}"
+        data-waste-factor="{{ section.settings.waste_factor }}"
+        data-product-id="{{ product.selected_or_first_available_variant.id }}"
+        data-product-price="{{ product.selected_or_first_available_variant.price }}"
+        data-currency="{{ cart.currency.symbol }}"
+      >
+        <div class="coverage-calc__unit-toggle">
+          <button type="button" class="coverage-calc__unit-btn active" data-unit="ft" aria-label="Use feet">FT</button>
+          <button type="button" class="coverage-calc__unit-btn" data-unit="m" aria-label="Use meters">M</button>
+        </div>
+
+        <div class="coverage-calc__form">
+          <div class="coverage-calc__field">
+            <label for="calc-width-{{ section.id }}">Wall Width (<span class="unit-label">ft</span>)</label>
+            <input type="number" id="calc-width-{{ section.id }}" min="0" step="0.1" placeholder="10" aria-label="Wall width" />
+          </div>
+          <div class="coverage-calc__field">
+            <label for="calc-height-{{ section.id }}">Wall Height (<span class="unit-label">ft</span>)</label>
+            <input type="number" id="calc-height-{{ section.id }}" min="0" step="0.1" placeholder="8" aria-label="Wall height" />
+          </div>
+        </div>
+
+        <div class="coverage-calc__result" aria-live="polite">
+          <div class="coverage-calc__panels-needed">0</div>
+          <div class="coverage-calc__panels-label">panels needed</div>
+          <div class="coverage-calc__cost"></div>
+          <div class="coverage-calc__adhesive"></div>
+          <button type="button" class="coverage-calc__add-btn button">
+            Add <span class="add-qty">0</span> Panels to Cart
+          </button>
+          <p class="coverage-calc__note">Includes {{ section.settings.waste_factor }}% extra for cuts and waste. Adhesive estimate: ~1 tube per {{ section.settings.adhesive_panels_per_tube }} panels.</p>
+        </div>
+      </coverage-calculator>
+    </div>
+  </div>
+</div>
+
+<script src="{{ 'coverage-calculator.js' | asset_url }}" defer="defer"></script>
+
+{% schema %}
+{
+  "name": "Coverage Calculator",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "default": "How Many Panels Do You Need?",
+      "label": "Heading"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "default": "Enter your wall dimensions and we'll calculate the rest.",
+      "label": "Subheading"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        { "value": "h2", "label": "Small" },
+        { "value": "h1", "label": "Medium" },
+        { "value": "h0", "label": "Large" }
+      ],
+      "default": "h1",
+      "label": "Heading size"
+    },
+    {
+      "type": "select",
+      "id": "heading_alignment",
+      "options": [
+        { "value": "left", "label": "Left" },
+        { "value": "center", "label": "Center" },
+        { "value": "right", "label": "Right" }
+      ],
+      "default": "center",
+      "label": "Heading alignment"
+    },
+    {
+      "type": "select",
+      "id": "heading_tag",
+      "options": [
+        { "value": "h2", "label": "H2" },
+        { "value": "h3", "label": "H3" },
+        { "value": "h4", "label": "H4" },
+        { "value": "div", "label": "div" }
+      ],
+      "default": "h2",
+      "label": "Heading tag"
+    },
+    {
+      "type": "header",
+      "content": "Panel dimensions"
+    },
+    {
+      "type": "text",
+      "id": "panel_area_sqm",
+      "default": "0.5",
+      "label": "Panel area (m²)",
+      "info": "Area of a single panel in square meters. Default: 0.5 m² (100cm x 50cm)"
+    },
+    {
+      "type": "text",
+      "id": "adhesive_panels_per_tube",
+      "default": "5",
+      "label": "Panels per adhesive tube",
+      "info": "How many panels one tube of construction adhesive covers (typically 4-6)"
+    },
+    {
+      "type": "range",
+      "id": "waste_factor",
+      "min": 0,
+      "max": 30,
+      "step": 1,
+      "default": 10,
+      "label": "Waste factor (%)",
+      "info": "Extra percentage for cuts and waste"
+    },
+    {
+      "type": "checkbox",
+      "id": "narrow",
+      "default": true,
+      "label": "Narrow width"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_divider",
+      "default": false,
+      "label": "Show divider"
+    },
+    {
+      "type": "header",
+      "content": "Padding"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Top padding",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Bottom padding",
+      "default": 36
+    }
+  ],
+  "presets": [
+    {
+      "name": "Coverage Calculator"
+    }
+  ],
+  "templates": ["product"]
+}
+{% endschema %}

@@ -1,0 +1,97 @@
+.product-recommendations {
+  display: block;
+}
+
+@media screen and (min-width: 750px) and (max-width: 989px) {
+  .product-recommendations .product-grid:not(.slider) .flex-grid__item:nth-child(4) {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .product-recommendations .flex-grid--3-col-tablet > .flex-grid__item {
+    max-width: calc(33.33% - var(--grid-horizontal-spacing) * 2 / 3);
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .product-recommendations .flex-grid--4-col-desktop > .flex-grid__item {
+    max-width: calc(25% - var(--grid-horizontal-spacing) * 3 / 4);
+  }
+}
+
+/* Snapwall editorial related products */
+.product-recommendations--editorial .product-recommendations__header {
+  margin-bottom: 2.4rem;
+}
+
+.product-grid--editorial {
+  row-gap: 2rem;
+}
+
+.product-recommendations__item .card-wrapper {
+  height: 100%;
+}
+
+.product-recommendations__item .card {
+  height: 100%;
+}
+
+.product-recommendations__item .card__inner {
+  background-color: rgba(var(--color-foreground), 0.04);
+}
+
+.product-recommendations--editorial .card-information--product {
+  padding-top: 1.4rem;
+}
+
+.product-recommendations--editorial .card-information__wrapper--product {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.product-recommendations--editorial .card-information__text--product {
+  line-height: 1.02;
+}
+
+.product-recommendations--editorial .card__media--product {
+  overflow: hidden;
+}
+
+.product-recommendations--editorial .card__media--product img {
+  transition: transform 240ms ease;
+}
+
+.product-recommendations--editorial .card-information__button--product {
+  margin-top: 1.4rem;
+  transition: opacity 220ms ease, transform 220ms ease;
+}
+
+.product-recommendations--editorial .card__quick-buy {
+  width: 100%;
+  min-height: 4.4rem;
+  border-radius: 0;
+}
+
+@media screen and (hover: hover) {
+  .product-recommendations--editorial .card-information__button--product {
+    opacity: 0;
+    transform: translateY(0.8rem);
+  }
+
+  .product-recommendations--editorial .card-wrapper--product:hover .card-information__button--product {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .product-recommendations--editorial .card-wrapper--product:hover .card__media--product img {
+    transform: scale(1.03);
+  }
+}
+
+@media screen and (max-width: 749px) {
+  .product-recommendations--editorial .card-information__button--product {
+    opacity: 1;
+    transform: none;
+  }
+}

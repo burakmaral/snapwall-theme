@@ -1,0 +1,646 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "breadcrumb": {
+          "type": "breadcrumb",
+          "settings": {
+            "text_style": "uppercase",
+            "show_divider": false
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "title_size": "h2",
+            "show_price": false,
+            "price_size": "medium"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "price_size": "medium",
+            "show_badges": true,
+            "sale_badge_basis": "auto"
+          }
+        },
+        "bf69afa9-d958-46d2-837d-a04affa2d88c": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<div class=\"loox-rating\" data-id=\"{{ product.id }}\" data-rating=\"{{ product.metafields.loox.avg_rating }}\" data-raters=\"{{ product.metafields.loox.num_reviews }}\">\n</div>"
+          }
+        },
+        "rating": {
+          "type": "rating",
+          "settings": {}
+        },
+        "short_description": {
+          "type": "text",
+          "settings": {
+            "icon": "none",
+            "text": "3D styrofoam brick panels with 1 inch of real depth. Lightweight, DIY-friendly, and designed for any flat surface \u2014 indoors or out. No tools, no contractor, no mess.",
+            "text_style": "body"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "show_variant_labels": true,
+            "picker_type": "button",
+            "swatch_source": "variant",
+            "swatch_type": "round",
+            "enable_swatch_unavailable_click": true,
+            "size_chart": ""
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity_selector": true,
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": false
+          }
+        },
+        "inline_guarantees": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<div style=\"display:flex;flex-wrap:wrap;gap:14px;margin-top:14px;font-size:0.78rem;color:#555;border-top:1px solid #e8e8e8;padding-top:14px;\"><span><i class=\"fa fa-truck\"></i>&nbsp; Free Shipping US & EU</span><span><i class=\"fa fa-rotate-left\"></i>&nbsp; 30-Day Returns</span><span><i class=\"fa fa-lock\"></i>&nbsp; Secure Checkout</span><span><i class=\"fa fa-scissors\"></i>&nbsp; Easy DIY Install</span></div>"
+          }
+        },
+        "separator_1": {
+          "type": "separator",
+          "settings": {}
+        },
+        "collapsible_tab_details": {
+          "type": "collapsible_tab",
+          "settings": {
+            "icon": "none",
+            "heading": "Product Details",
+            "content": "<p><strong>Material:</strong> High-density expanded polystyrene (EPS)<br\/><strong>Panel Size:</strong> 100cm x 50cm (0.5 m\u00b2 per panel)<br\/><strong>Thickness:</strong> 2 cm \/ ~1 inch<br\/><strong>Weight:</strong> Ultra-lightweight, approx. 100-200g per panel<br\/><strong>Fire Rating:</strong> Self-extinguishing material<br\/><strong>Moisture Resistance:</strong> Water-resistant, suitable for kitchens and bathrooms<\/p>",
+            "page": "",
+            "custom_liquid": "",
+            "keep_open": false
+          }
+        },
+        "collapsible_tab_thickness": {
+          "type": "collapsible_tab",
+          "settings": {
+            "icon": "none",
+            "heading": "Thickness & Texture",
+            "content": "<p>Each panel is 1 inch (2.54 cm) thick \u2014 this is genuine 3D depth, not a flat print or peel-and-stick surface. The raised brick pattern creates real shadow lines that shift with the light, giving your wall the appearance of authentic masonry. This is NOT wallpaper and NOT a sticker.<\/p>",
+            "page": "",
+            "custom_liquid": "",
+            "keep_open": false
+          }
+        },
+        "collapsible_tab_install": {
+          "type": "collapsible_tab",
+          "settings": {
+            "icon": "none",
+            "heading": "Installation Guide",
+            "content": "<p><strong>Step 1:</strong> Clean and dry your wall surface.<br\/><strong>Step 2:</strong> Apply construction adhesive to the back of each panel.<br\/><strong>Step 3:</strong> Press firmly onto the wall, hold for 30 seconds. Done.<\/p><p><em>Use a box cutter to trim panels at edges. No special tools needed. Optional: fix with screws for extra hold. Paint with any standard wall paint for a custom finish.<\/em><\/p>",
+            "page": "",
+            "custom_liquid": "",
+            "keep_open": false
+          }
+        },
+        "collapsible_tab_shipping": {
+          "type": "collapsible_tab",
+          "settings": {
+            "icon": "none",
+            "heading": "Shipping Info",
+            "content": "<p>Manufacturing takes 2-3 days. Delivery generally takes 3-5 business days. Free shipping to the US and EU. Panels ship flat and lightweight. US, UK, EU, and Canada residents do not pay customs fees or import taxes.<\/p>",
+            "page": "",
+            "custom_liquid": "",
+            "keep_open": false
+          }
+        },
+        "collapsible_tab_faq": {
+          "type": "collapsible_tab",
+          "settings": {
+            "icon": "none",
+            "heading": "FAQ",
+            "content": "<p><strong>Can I paint these?<\/strong><br\/>Yes \u2014 any standard interior wall paint works. Use a roller or spray for best results.<\/p><p><strong>Outdoor use?<\/strong><br\/>Yes. Our panels are moisture-resistant and weather-resistant.<\/p><p><strong>How many panels per m\u00b2?<\/strong><br\/>Each panel covers 0.5 m\u00b2 (100cm x 50cm), so 2 panels per square meter.<\/p><p><strong>How do I cut them?<\/strong><br\/>A standard box cutter or utility knife cuts through easily along a straight edge.<\/p>",
+            "page": "",
+            "custom_liquid": "",
+            "keep_open": false
+          }
+        },
+        "inventory_status": {
+          "type": "inventory_status",
+          "settings": {
+            "inventory_threshold": 20,
+            "show_inventory_transfer": true,
+            "color_scheme": "accent-3"
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        },
+        "sticky_cart": {
+          "type": "sticky_cart",
+          "settings": {
+            "show_quantity_selector": false
+          }
+        },
+        "complementary": {
+          "type": "complementary",
+          "settings": {
+            "icon": "none",
+            "heading": "Complete the Look",
+            "make_collapsible_row": false,
+            "product_list_limit": 4,
+            "image_ratio": "square",
+            "image_position": "center center",
+            "show_vendor": false,
+            "enable_image_fill": true
+          }
+        }
+      },
+      "block_order": [
+        "breadcrumb",
+        "title",
+        "price",
+        "bf69afa9-d958-46d2-837d-a04affa2d88c",
+        "rating",
+        "short_description",
+        "variant_picker",
+        "buy_buttons",
+        "inline_guarantees",
+        "separator_1",
+        "collapsible_tab_details",
+        "collapsible_tab_thickness",
+        "collapsible_tab_install",
+        "collapsible_tab_shipping",
+        "collapsible_tab_faq",
+        "inventory_status",
+        "share",
+        "sticky_cart",
+        "complementary"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "media_position": "left",
+        "media_size": "medium",
+        "gallery_layout": "thumbnail_slider",
+        "image_ratio": "adapt",
+        "show_featured_media": false,
+        "show_thumbnails": true,
+        "hide_variants": true,
+        "enable_image_zoom": true,
+        "enable_video_looping": true,
+        "mobile_image_ratio": "adapt",
+        "show_mobile_thumbnails": true,
+        "padding_top": 0,
+        "padding_bottom": 72
+      }
+    },
+    "install_guide": {
+      "type": "dual-scroll",
+      "blocks": {
+        "ig_step1": {
+          "type": "slide",
+          "settings": {
+            "title": "1. Prepare Your Wall",
+            "heading_size": "h1",
+            "description": "<p>Clean and dry your wall surface. Ensure it is smooth and free of dust, grease, or loose paint. A clean surface ensures the strongest adhesive bond.<\/p>",
+            "text_size": "typeset2",
+            "secondary_color": false,
+            "enable_highlight": false,
+            "highlight_style": "marker",
+            "button_label": "",
+            "button_size": "medium",
+            "media_background_color": "#f0ebe3"
+          }
+        },
+        "ig_step2": {
+          "type": "slide",
+          "settings": {
+            "title": "2. Apply Adhesive & Press",
+            "heading_size": "h1",
+            "description": "<p>Apply construction adhesive to the back of each panel in a zigzag pattern. Press firmly onto the wall and hold for 30 seconds. Align edges with adjacent panels as you go.<\/p>",
+            "text_size": "typeset2",
+            "secondary_color": false,
+            "enable_highlight": false,
+            "highlight_style": "marker",
+            "button_label": "",
+            "button_size": "medium",
+            "media_background_color": "#f0ebe3"
+          }
+        },
+        "ig_step3": {
+          "type": "slide",
+          "settings": {
+            "title": "3. Trim & Finish",
+            "heading_size": "h1",
+            "description": "<p>Use a box cutter or utility knife to trim panels around outlets, corners, and edges. Optional: paint with any standard wall paint to match your color scheme. That's it \u2014 you're done.<\/p>",
+            "text_size": "typeset2",
+            "secondary_color": false,
+            "enable_highlight": false,
+            "highlight_style": "marker",
+            "button_label": "",
+            "button_size": "medium",
+            "media_background_color": "#f0ebe3"
+          }
+        }
+      },
+      "block_order": ["ig_step1", "ig_step2", "ig_step3"],
+      "settings": {
+        "heading": "Install It Yourself. Seriously.",
+        "heading_size": "h0",
+        "heading_tag": "h2",
+        "heading_alignment": "center",
+        "enable_highlight": false,
+        "highlight_style": "marker",
+        "narrow": false,
+        "padding_top": 80,
+        "padding_bottom": 80,
+        "heading_color": "#1E1A17",
+        "text_color": "#2c2724",
+        "description_color": "#5a534e",
+        "panel_background_color": "#FAF7F2",
+        "border_color": "#e8e3db",
+        "button_background_color": "#1E1A17",
+        "button_text_color": "#FAF7F2",
+        "highlight_color": "#c2572a",
+        "transition_type": "scroll",
+        "media_rotation": 0,
+        "media_scale": 100,
+        "enable_media_shadow": false
+      }
+    },
+    "rooms_use_case": {
+      "type": "image-with-text",
+      "blocks": {
+        "ruc_heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "One Panel. Six Rooms.",
+            "heading_size": "h0",
+            "heading_tag": "h2",
+            "enable_highlight": false,
+            "highlight_style": "marker"
+          }
+        },
+        "ruc_text": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Restaurant<\/strong> \u2014 Warm, inviting atmosphere<br\/><strong>Office<\/strong> \u2014 Professional design statement<br\/><strong>Kitchen<\/strong> \u2014 Moisture-resistant backsplash alternative<br\/><strong>Outdoor<\/strong> \u2014 Weather-resistant patio walls<br\/><strong>Living Room<\/strong> \u2014 Accent wall focal point<br\/><strong>Bedroom<\/strong> \u2014 Headboard feature wall<\/p>",
+            "text_size": "typeset2",
+            "secondary_color": false,
+            "enable_highlight": false,
+            "highlight_style": "marker"
+          }
+        },
+        "ruc_button": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop All Panels",
+            "button_link": "shopify:\/\/collections\/all",
+            "button_size": "medium",
+            "button_style_secondary": false,
+            "enable_highlight": false,
+            "highlight_style": "marker"
+          }
+        }
+      },
+      "block_order": ["ruc_heading", "ruc_text", "ruc_button"],
+      "settings": {
+        "image_position": "right",
+        "image_ratio": "adapt",
+        "full_width": false,
+        "show_divider": false,
+        "text_alignment": "left",
+        "mobile_text_alignment": "left",
+        "use_custom_colors": false,
+        "colors_text": "#2c2724",
+        "colors_background": "#FAF7F2",
+        "gradient_background": "",
+        "colors_highlight": "#c2572a",
+        "padding_top": 0,
+        "padding_bottom": 80
+      }
+    },
+    "coverage-calculator": {
+      "type": "coverage-calculator",
+      "settings": {
+        "heading": "How Many Panels Do You Need?",
+        "subheading": "Enter your wall dimensions and we'll calculate the rest.",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "heading_tag": "h2",
+        "panel_area_sqm": "0.5",
+        "adhesive_panels_per_tube": "5",
+        "waste_factor": 10,
+        "narrow": true,
+        "show_divider": false,
+        "padding_top": 72,
+        "padding_bottom": 72
+      }
+    },
+    "guarantees": {
+      "type": "guarantees",
+      "blocks": {
+        "guarantee-0": {
+          "type": "guarantee",
+          "settings": {
+            "icon": "truck",
+            "icon_size": "medium",
+            "custom_icon": "",
+            "title": "Free Shipping",
+            "title_size": "h4",
+            "text": "<p>Free delivery to the US and EU on all orders.<\/p>",
+            "enable_highlight": false,
+            "highlight_style": "marker"
+          }
+        },
+        "guarantee-1": {
+          "type": "guarantee",
+          "settings": {
+            "icon": "return",
+            "icon_size": "medium",
+            "custom_icon": "",
+            "title": "Easy Returns",
+            "title_size": "h4",
+            "text": "<p>30-day hassle-free return policy.<\/p>",
+            "enable_highlight": false,
+            "highlight_style": "marker"
+          }
+        },
+        "guarantee-2": {
+          "type": "guarantee",
+          "settings": {
+            "icon": "shield",
+            "icon_size": "medium",
+            "custom_icon": "",
+            "title": "Quality Guaranteed",
+            "title_size": "h4",
+            "text": "<p>Handcrafted from high-density polystyrene for lasting quality.<\/p>",
+            "enable_highlight": false,
+            "highlight_style": "marker"
+          }
+        },
+        "guarantee-3": {
+          "type": "guarantee",
+          "settings": {
+            "icon": "fire",
+            "icon_size": "medium",
+            "custom_icon": "",
+            "title": "Fire Rated",
+            "title_size": "h4",
+            "text": "<p>Self-extinguishing material, safe for residential and commercial use.<\/p>",
+            "enable_highlight": false,
+            "highlight_style": "marker"
+          }
+        }
+      },
+      "block_order": ["guarantee-0", "guarantee-1", "guarantee-2", "guarantee-3"],
+      "settings": {
+        "layout": "default",
+        "column_alignment": "center",
+        "horizontal_content": false,
+        "full_width": true,
+        "show_divider": false,
+        "columns_desktop": 4,
+        "heading": "",
+        "heading_size": "h1",
+        "heading_tag": "h2",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "use_custom_colors": true,
+        "colors_icon": "#c2572a",
+        "colors_text": "#2c2724",
+        "colors_background": "#f0ebe3",
+        "gradient_background": "",
+        "colors_highlight": "#c2572a",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "enable_highlight": false,
+        "highlight_style": "marker"
+      }
+    },
+    "product-faq": {
+      "type": "faq",
+      "blocks": {
+        "pf_q1": {
+          "type": "question",
+          "settings": {
+            "title": "How do I install these panels?",
+            "text": "<p>Apply construction adhesive to the back of each panel and press onto a clean, dry wall \u2014 or fix with screws for extra hold. Use a utility knife to cut panels to size. Most walls are completed in one afternoon.<\/p>",
+            "enable_highlight": false,
+            "highlight_style": "marker"
+          }
+        },
+        "pf_q2": {
+          "type": "question",
+          "settings": {
+            "title": "Can I paint the panels?",
+            "text": "<p>Yes! Our panels accept any standard interior wall paint. Use a roller or spray paint for the best finish. This lets you match any color scheme perfectly.<\/p>",
+            "enable_highlight": false,
+            "highlight_style": "marker"
+          }
+        },
+        "pf_q3": {
+          "type": "question",
+          "settings": {
+            "title": "Are the panels moisture resistant?",
+            "text": "<p>Yes. Our high-density polystyrene panels are water-resistant and suitable for kitchens, bathrooms, and humid environments. They won't warp, rot, or develop mold.<\/p>",
+            "enable_highlight": false,
+            "highlight_style": "marker"
+          }
+        },
+        "pf_q4": {
+          "type": "question",
+          "settings": {
+            "title": "How do I replace a damaged panel?",
+            "text": "<p>Use a chisel or oscillating tool to carefully remove the damaged panel and scrape off old adhesive. Clean the surface, apply fresh construction adhesive to the replacement panel, and press into place. Some touch-up painting may be needed afterward.<\/p>",
+            "enable_highlight": false,
+            "highlight_style": "marker"
+          }
+        },
+        "pf_q5": {
+          "type": "question",
+          "settings": {
+            "title": "How long does shipping take?",
+            "text": "<p>Manufacturing takes 2-3 days and delivery generally takes 3-5 business days. Free shipping to US and EU. US, UK, EU, and Canada residents do not pay customs fees or import taxes.<\/p>",
+            "enable_highlight": false,
+            "highlight_style": "marker"
+          }
+        },
+        "pf_q6": {
+          "type": "question",
+          "settings": {
+            "title": "What is your return policy?",
+            "text": "<p>We offer a 30-day return policy. If you're not completely satisfied, contact us and we'll guide you through the return process.<\/p>",
+            "enable_highlight": false,
+            "highlight_style": "marker"
+          }
+        }
+      },
+      "block_order": ["pf_q1", "pf_q2", "pf_q3", "pf_q4", "pf_q5", "pf_q6"],
+      "settings": {
+        "narrow": true,
+        "secondary_background": false,
+        "show_divider": false,
+        "heading": "Common Questions About This Product",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "heading_tag": "h2",
+        "colors_highlight": "#c2572a",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "enable_highlight": false,
+        "highlight_style": "marker"
+      }
+    },
+    "testimonials": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonial-0": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5",
+            "text": "<p>I finished our accent wall in one afternoon. The texture looks far more expensive than it is. Every guest asks who designed it.<\/p>",
+            "author": "Ayse K. \u2014 Istanbul",
+            "enable_highlight": false,
+            "highlight_style": "marker"
+          }
+        },
+        "testimonial-1": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5",
+            "text": "<p>We wanted the look of old brick without the weight. These panels gave the room instant character and were incredibly simple to install.<\/p>",
+            "author": "Mehmet D. \u2014 Ankara",
+            "enable_highlight": false,
+            "highlight_style": "marker"
+          }
+        },
+        "testimonial-2": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5",
+            "text": "<p>The finish photographs beautifully and looks even better in person. Turned a plain wall into the focal point of the apartment.<\/p>",
+            "author": "Sarah L. \u2014 London",
+            "enable_highlight": false,
+            "highlight_style": "marker"
+          }
+        },
+        "testimonial-3": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5",
+            "text": "<p>Ordered 40 panels for our restaurant entrance. The brick effect looks completely real. Installation was easy and the result is stunning.<\/p>",
+            "author": "Marco R. \u2014 Milan",
+            "enable_highlight": false,
+            "highlight_style": "marker"
+          }
+        },
+        "testimonial-4": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5",
+            "text": "<p>Best wall upgrade we've ever done. Painted them to match our bedroom palette and the 3D effect is incredible. Highly recommend.<\/p>",
+            "author": "Emma W. \u2014 New York",
+            "enable_highlight": false,
+            "highlight_style": "marker"
+          }
+        }
+      },
+      "block_order": ["testimonial-0", "testimonial-1", "testimonial-2", "testimonial-3", "testimonial-4"],
+      "settings": {
+        "autorotate": true,
+        "autorotate_speed": 5,
+        "hide_images": true,
+        "show_divider": false,
+        "heading": "What Our Customers Say",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "heading_tag": "h2",
+        "colors_highlight": "#c2572a",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "enable_highlight": false,
+        "highlight_style": "marker"
+      }
+    },
+    "apps": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true,
+        "show_divider": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "product_list_limit": 4,
+        "show_divider": false,
+        "heading": "You Might Also Like",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "heading_tag": "h2",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "image_ratio": "square",
+        "image_position": "center center",
+        "enable_image_fill": true,
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": true,
+        "show_quick_buy": true,
+        "enable_quick_view": true,
+        "enable_color_swatches": true,
+        "enable_countdown": false,
+        "colors_highlight": "#c2572a",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "enable_highlight": false,
+        "highlight_style": "marker"
+      }
+    },
+    "recently-viewed-products": {
+      "type": "recently-viewed-products",
+      "settings": {
+        "show_divider": false,
+        "heading": "Recently Viewed",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "heading_tag": "h2",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "image_ratio": "square",
+        "image_position": "center center",
+        "enable_image_fill": true,
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": true,
+        "show_quick_buy": true,
+        "enable_quick_view": true,
+        "enable_color_swatches": true,
+        "enable_countdown": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "install_guide",
+    "rooms_use_case",
+    "coverage-calculator",
+    "guarantees",
+    "product-faq",
+    "testimonials",
+    "apps",
+    "product-recommendations",
+    "recently-viewed-products"
+  ]
+}

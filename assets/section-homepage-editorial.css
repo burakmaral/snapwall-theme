@@ -1,0 +1,203 @@
+/* ============================================================
+   Homepage Editorial Overrides — Snapwall Design System
+   Applied to index template sections for the editorial,
+   magazine-style feel. Uses existing CSS variables only.
+   ============================================================ */
+
+/* ---- 0. Premium Global Overrides ---- */
+
+/* Poppins headings with letter-spacing for authority */
+h1, h2, h3,
+.h0, .h1, .h2, .h3 {
+  font-family: 'Poppins', 'Jost', sans-serif;
+  letter-spacing: 0.03em;
+}
+
+/* Roboto body text */
+body,
+.rte,
+.rte p {
+  font-family: 'Roboto', 'Jost', sans-serif;
+}
+
+/* Sharp, uppercase buttons — premium feel */
+.button,
+button[type="submit"],
+.shopify-payment-button__button {
+  border-radius: 2px !important;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.85rem;
+  font-family: 'Poppins', 'Jost', sans-serif;
+}
+
+/* Remove colored circle backgrounds from icon sections */
+.icon-with-text__icon {
+  background: none !important;
+  border: none !important;
+}
+
+/* ---- 1. Hero Section ---- */
+
+/* Slow, cinematic ambient motion */
+.template-index .slideshow[data-animate-image] .media img {
+  animation-duration: 30s;
+}
+
+/* Scroll indicator at hero bottom */
+.hero-scroll-indicator {
+  position: absolute;
+  bottom: 3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  color: rgb(var(--color-foreground));
+  opacity: 0.7;
+  animation: hero-scroll-bounce 2s ease-in-out infinite;
+}
+
+.hero-scroll-indicator__text {
+  font-size: 1.1rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-family: var(--font-body-family);
+}
+
+.hero-scroll-indicator__arrow {
+  width: 2rem;
+  height: 2rem;
+}
+
+@keyframes hero-scroll-bounce {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50% { transform: translateX(-50%) translateY(0.6rem); }
+}
+
+/* ---- 2. Image Comparison (Transformation) ---- */
+
+/* Editorial heading for before/after section */
+.template-index .image-comparison .title {
+  max-width: 56rem;
+}
+
+/* ---- 3. Gallery (Texture Showcase) ---- */
+
+/* Taller tiles for texture close-ups */
+.template-index .gallery .media {
+  border-radius: 0;
+}
+
+/* Overlay text: editorial lowercase feel */
+.template-index .gallery .overlay-text__subheading {
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  opacity: 0.8;
+}
+
+.template-index .gallery .overlay-text__heading {
+  font-family: var(--font-heading-family);
+  font-weight: var(--font-heading-weight);
+}
+
+/* Subtle scale on all gallery cards (even without links) */
+.template-index .gallery__card .media img {
+  transition: transform 0.6s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+@media screen and (hover: hover) {
+  .template-index .gallery__card:hover .media img {
+    transform: scale(1.03);
+  }
+}
+
+/* ---- 4. Guarantees (Why These Panels) ---- */
+
+/* Larger icon sizing for editorial weight */
+.template-index .guarantee__item {
+  --icon-height: 4rem;
+}
+
+.template-index .guarantee__item .h3 {
+  font-family: var(--font-heading-family);
+  font-weight: var(--font-heading-weight);
+  margin-top: 1.5rem;
+  margin-bottom: 0.8rem;
+}
+
+.template-index .guarantee__item .rte {
+  max-width: 30rem;
+  margin-inline: auto;
+  line-height: 1.7;
+}
+
+/* ---- 5. Image Banner (Room Inspiration) ---- */
+
+/* Cinematic feel — slow entrance */
+.template-index .banner .banner__heading {
+  font-family: var(--font-heading-family);
+  letter-spacing: -0.02em;
+}
+
+/* ---- 6. Testimonials (Social Proof) ---- */
+
+/* Larger quote icon for editorial pull-quote style */
+.template-index .testimonial__blockquote .icon-quote {
+  width: 4.5rem;
+  height: 4.5rem;
+  opacity: 0.3;
+  color: rgb(var(--color-accent));
+}
+
+/* Larger quote text for magazine feel */
+.template-index .testimonial__blockquote .rte {
+  font-family: var(--font-heading-family);
+  font-weight: var(--font-heading-weight);
+  font-size: calc(var(--font-heading-scale) * 2rem);
+  line-height: 1.5;
+  font-style: italic;
+  max-width: 64rem;
+  margin-inline: auto;
+}
+
+@media screen and (min-width: 750px) {
+  .template-index .testimonial__blockquote .rte {
+    font-size: calc(var(--font-heading-scale) * 2.4rem);
+  }
+}
+
+/* Author name: small caps editorial style */
+.template-index .testimonial__author {
+  font-family: var(--font-body-family);
+  font-style: normal;
+  font-size: 1.3rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  opacity: 0.65;
+  margin-top: 2.5rem;
+}
+
+.template-index .testimonial__author::before {
+  content: '';
+}
+
+/* ---- 7. Final CTA (Rich Text Dark) ---- */
+
+/* The dark CTA section — bigger heading, generous spacing */
+.template-index .rich-text .title.h0 {
+  letter-spacing: -0.02em;
+}
+
+/* ---- Reduced Motion ---- */
+@media (prefers-reduced-motion: reduce) {
+  .hero-scroll-indicator {
+    animation: none;
+  }
+
+  .template-index .gallery__card .media img {
+    transition: none;
+  }
+}

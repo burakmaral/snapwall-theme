@@ -1,0 +1,344 @@
+/* ============================================================
+   Product Page Editorial Overrides — Snapwall Design System
+   Applied to product template for the editorial,
+   magazine-style product experience. Uses existing CSS vars.
+   ============================================================ */
+
+/* ---- 1. Product Title — Editorial Serif ---- */
+
+.template-product .product__heading {
+  font-family: 'Poppins', 'Jost', sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  text-transform: none;
+  line-height: 1.15;
+}
+
+/* ---- 2. Product Media — Warm Background ---- */
+
+.template-product .product__media-wrapper {
+  background-color: #F5F0E8;
+}
+
+.template-product .product__media-wrapper .media {
+  background-color: #F5F0E8;
+}
+
+/* Smooth crossfade on thumbnail click */
+.template-product .product__media-item {
+  transition: opacity 0.4s ease;
+}
+
+/* ---- 3. Price — Accent color, editorial weight ---- */
+
+.template-product .price-item--regular,
+.template-product .price-item--sale {
+  font-family: 'Roboto', 'Jost', sans-serif;
+  font-weight: 500;
+  color: #C2572A;
+}
+
+.template-product .price--on-sale .price-item--regular {
+  color: rgba(var(--color-foreground), 0.45);
+}
+
+/* ---- 4. Coverage Badge ---- */
+
+.sw-coverage-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 0.8rem 1.4rem;
+  background-color: #F0EBE3;
+  border-left: 3px solid #C2572A;
+  font-family: 'Roboto', 'Jost', sans-serif;
+  font-size: 1.3rem;
+  letter-spacing: 0.02em;
+  color: #2C2724;
+  margin-top: 0.5rem;
+}
+
+.sw-coverage-badge svg {
+  flex-shrink: 0;
+  color: #C2572A;
+}
+
+/* ---- 5. Quantity Selector — Architectural Minimal ---- */
+
+.template-product .quantity {
+  border-radius: 0;
+}
+
+.template-product .quantity__button {
+  min-width: 44px;
+  min-height: 44px;
+}
+
+/* ---- 6. Add to Cart Button — Full Width, Sharp, Warm ---- */
+
+.template-product .product-form__submit {
+  border-radius: 0;
+  font-family: 'Roboto', 'Jost', sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  transition: background-color 0.25s ease, color 0.25s ease;
+  min-height: 5.2rem;
+}
+
+/* ---- 7. Trust Micro-Badges ---- */
+
+.sw-trust-badges {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 1.6rem;
+  padding: 1.2rem 0;
+  border-top: 1px solid rgba(var(--color-foreground), 0.08);
+}
+
+.sw-trust-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: 'Roboto', 'Jost', sans-serif;
+  font-size: 1.2rem;
+  color: rgba(var(--color-foreground), 0.6);
+  letter-spacing: 0.02em;
+}
+
+.sw-trust-badge svg {
+  flex-shrink: 0;
+  color: #C2572A;
+  opacity: 0.8;
+}
+
+.sw-trust-divider {
+  color: rgba(var(--color-foreground), 0.2);
+  font-size: 1.4rem;
+  line-height: 1;
+}
+
+/* ---- 8. Specs Table ---- */
+
+.sw-specs-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Roboto', 'Jost', sans-serif;
+  font-size: 1.4rem;
+}
+
+.sw-specs-table tr {
+  border-bottom: 1px solid rgba(var(--color-foreground), 0.08);
+}
+
+.sw-specs-table td {
+  padding: 1rem 0;
+  vertical-align: top;
+}
+
+.sw-specs-table td:first-child {
+  font-weight: 500;
+  color: rgba(var(--color-foreground), 0.7);
+  white-space: nowrap;
+  padding-right: 2rem;
+  width: 40%;
+}
+
+.sw-specs-table td:last-child {
+  color: rgb(var(--color-foreground));
+}
+
+/* ---- 9. Installation Steps ---- */
+
+.sw-install-steps {
+  display: grid;
+  gap: 2rem;
+}
+
+.sw-install-step {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.6rem;
+}
+
+.sw-install-step__number {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  font-family: 'Poppins', 'Jost', sans-serif;
+  font-size: 2rem;
+  color: rgba(var(--color-foreground), 0.12);
+  border: 1px solid rgba(var(--color-foreground), 0.08);
+}
+
+.sw-install-step__content {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding-top: 0.6rem;
+}
+
+.sw-install-step__content svg {
+  flex-shrink: 0;
+  color: #C2572A;
+  margin-top: 0.2rem;
+}
+
+.sw-install-step__content p {
+  margin: 0;
+  font-family: 'Roboto', 'Jost', sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: rgb(var(--color-foreground));
+}
+
+/* ---- 10. Accordion Tabs — Editorial Clean ---- */
+
+.template-product .product__accordion .summary__title {
+  font-family: 'Roboto', 'Jost', sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+.template-product .product__accordion .accordion__content {
+  font-family: 'Roboto', 'Jost', sans-serif;
+  line-height: 1.7;
+}
+
+/* ---- 11. Product Description — Magazine Style ---- */
+
+.template-product .product__description {
+  font-family: 'Roboto', 'Jost', sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.75;
+  color: rgba(var(--color-foreground), 0.8);
+  max-width: 52rem;
+}
+
+.template-product .product__description p {
+  margin-bottom: 1.2rem;
+}
+
+/* ---- 12. Texture Detail Section ---- */
+
+.template-product .image-with-text-overlay .banner__heading {
+  font-family: 'Poppins', 'Jost', sans-serif;
+  font-style: italic;
+  letter-spacing: -0.02em;
+}
+
+/* ---- 13. Product Recommendations — Editorial ---- */
+
+.template-product .product-recommendations .title {
+  font-family: 'Poppins', 'Jost', sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+/* Hide ratings in product recs on product page */
+.template-product .product-recommendations .rating,
+.template-product .product-recommendations .rating-text,
+.template-product .product-recommendations .rating-count {
+  display: none;
+}
+
+/* Editorial card styling for recommendations */
+.template-product .product-recommendations .card-information__text {
+  font-family: 'Roboto', 'Jost', sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+
+/* Quick-add on hover for recommendations */
+.template-product .product-recommendations .card-information__button .button {
+  border-radius: 0;
+  font-family: 'Roboto', 'Jost', sans-serif;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+}
+
+/* ---- 14. Scrolling Promotion Bar ---- */
+
+.template-product .scrolling-promotion .promotion__item {
+  font-family: 'Roboto', 'Jost', sans-serif;
+}
+
+/* ---- 15. Thumbnail gallery — sharper feel ---- */
+
+.template-product .thumbnail-list__item .thumbnail {
+  border-radius: 0;
+}
+
+.template-product .thumbnail-list__item .media {
+  border-radius: 0;
+  background-color: #F5F0E8;
+}
+
+/* Active thumbnail ring */
+.template-product .thumbnail-list__item.is-active .thumbnail {
+  box-shadow: inset 0 0 0 2px #C2572A;
+}
+
+/* ---- 16. Product Info Text Badges ---- */
+
+.template-product .product__text .icon {
+  color: #C2572A;
+}
+
+/* ---- 17. Breadcrumb — subtle, editorial ---- */
+
+.template-product .breadcrumb {
+  font-family: 'Roboto', 'Jost', sans-serif;
+  font-size: 1.1rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.6;
+}
+
+/* ---- Mobile Responsive ---- */
+
+@media screen and (max-width: 749px) {
+  .sw-trust-badges {
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  .sw-trust-divider {
+    display: none;
+  }
+
+  .sw-trust-badge {
+    font-size: 1.1rem;
+  }
+
+  .sw-coverage-badge {
+    font-size: 1.2rem;
+  }
+
+  .sw-install-step__number {
+    width: 3.2rem;
+    height: 3.2rem;
+    font-size: 1.6rem;
+  }
+  
+  .sw-specs-table td:first-child {
+    width: 45%;
+  }
+}
+
+/* ---- Reduced Motion ---- */
+
+@media (prefers-reduced-motion: reduce) {
+  .template-product .product__media-item {
+    transition: none;
+  }
+}
