@@ -1,1 +1,158 @@
-{"name":"t:sections.header-group.name","type":"header","sections":{"header":{"type":"header","blocks":{"f828abea-2f83-4c17-98a0-e7a8a844dc2f":{"type":"mega_menu","disabled":true,"settings":{"menu_title":"Metal Decors","narrow":false,"show_menu_image":true,"promo_image_ratio_1":"square","promo_image_position_1":"center center","promo_heading_1":"ueiauiea","promo_text_1":"uieauiea","promo_overlay_content_1":false,"promo_link_1":"","promo_image_ratio_2":"portrait","promo_image_position_2":"center center","promo_heading_2":"","promo_text_2":"","promo_overlay_content_2":false,"promo_link_2":""}}},"block_order":["f828abea-2f83-4c17-98a0-e7a8a844dc2f"],"settings":{"logo":"shopify:\/\/shop_images\/snapwall_logo.jpg","logo_height":96,"mobile_logo_height":76,"logo_position":"top-left","menu":"main-menu","menu_mobile":"main-menu","customer_account_menu":"","enable_dropdown_menu":true,"show_line_separator":false,"uppercase_menu_items":true,"cart_icon":"cart","icon_weight":"1.3","enable_country_selector":false,"enable_language_selector":false,"enable_sticky_header":true,"show_sticky_header_scroll_up":false,"enable_transparent_header":true,"enable_transparent_header_collection":true,"enable_transparent_header_custom":"contact-us","show_transparent_header_border":false,"transparent_text_color":"#ffffff","enable_highlight":false,"highlight_labels":"","highlight_style":"circle","enable_sidebar":false,"sidebar_heading":"","mobile_logo_position":"center","colors_text":"#282828","colors_border":"#d2d5d9","colors_background":"#ffffff","gradient_background":"","colors_highlight":"#ffb503","padding_top":16,"padding_bottom":16}},"announcement-bar":{"type":"announcement-bar","blocks":{"announcement-bar-0":{"type":"announcement","settings":{"text":"Free Shipping to the US, EU and UK","text_on_mobile":"","text_size":15,"link":"","enable_highlight":false,"highlight_style":"marker"}},"b5dbf241-732b-4aae-ab88-c08e989501de":{"type":"announcement","settings":{"text":"High Quality Metal & Glass Arts","text_on_mobile":"","text_size":15,"link":"shopify:\/\/collections\/islamic-wall-art-metal","enable_highlight":false,"highlight_style":"marker"}},"d5847266-812e-4273-8d72-761968f93393":{"type":"announcement","disabled":true,"settings":{"text":"Unique Islamic Jewelry","text_on_mobile":"Islamic Jewelry","text_size":17,"link":"shopify:\/\/collections\/islamic-jewelry","enable_highlight":false,"highlight_style":"marker"}},"5c14c6be-4541-43d2-84f5-af631d7c7e6b":{"type":"announcement","disabled":true,"settings":{"text":"Welcome to our store","text_on_mobile":"","text_size":13,"link":"","enable_highlight":false,"highlight_style":"marker"}}},"block_order":["announcement-bar-0","b5dbf241-732b-4aae-ab88-c08e989501de","d5847266-812e-4273-8d72-761968f93393","5c14c6be-4541-43d2-84f5-af631d7c7e6b"],"disabled":true,"settings":{"only_homepage":false,"layout":"marquee","mobile_layout":"marquee","autorotate":true,"autorotate_speed":7,"show_navigation":true,"direction":"left","speed":2.3,"colors_text":"#ffffff","colors_background":"#3a3c3e","gradient_background":"","colors_highlight":"#ffb503","padding_top":0,"padding_bottom":0}}},"order":["header","announcement-bar"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "name": "t:sections.header-group.name",
+  "type": "header",
+  "sections": {
+    "header": {
+      "type": "header",
+      "blocks": {
+        "f828abea-2f83-4c17-98a0-e7a8a844dc2f": {
+          "type": "mega_menu",
+          "disabled": true,
+          "settings": {
+            "menu_title": "Metal Decors",
+            "narrow": false,
+            "show_menu_image": true,
+            "promo_image_ratio_1": "square",
+            "promo_image_position_1": "center center",
+            "promo_heading_1": "ueiauiea",
+            "promo_text_1": "uieauiea",
+            "promo_overlay_content_1": false,
+            "promo_link_1": "",
+            "promo_image_ratio_2": "portrait",
+            "promo_image_position_2": "center center",
+            "promo_heading_2": "",
+            "promo_text_2": "",
+            "promo_overlay_content_2": false,
+            "promo_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "f828abea-2f83-4c17-98a0-e7a8a844dc2f"
+      ],
+      "settings": {
+        "logo": "shopify://shop_images/snapwall-logo_19eddd42-ef4c-44d3-bea5-65f6ffc69cf0.png",
+        "logo_height": 96,
+        "mobile_logo_height": 76,
+        "logo_position": "top-left",
+        "menu": "main-menu",
+        "menu_mobile": "main-menu",
+        "customer_account_menu": "",
+        "enable_dropdown_menu": true,
+        "show_line_separator": false,
+        "uppercase_menu_items": true,
+        "cart_icon": "cart",
+        "icon_weight": "1.3",
+        "enable_country_selector": false,
+        "enable_language_selector": false,
+        "enable_sticky_header": true,
+        "show_sticky_header_scroll_up": false,
+        "enable_transparent_header": true,
+        "enable_transparent_header_collection": true,
+        "enable_transparent_header_custom": "contact-us",
+        "show_transparent_header_border": false,
+        "transparent_text_color": "#ffffff",
+        "enable_highlight": false,
+        "highlight_labels": "",
+        "highlight_style": "circle",
+        "enable_sidebar": false,
+        "sidebar_heading": "",
+        "mobile_logo_position": "center",
+        "colors_text": "#282828",
+        "colors_border": "#d2d5d9",
+        "colors_background": "#ffffff",
+        "gradient_background": "",
+        "colors_highlight": "#ffb503",
+        "padding_top": 16,
+        "padding_bottom": 16
+      }
+    },
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "blocks": {
+        "announcement-bar-0": {
+          "type": "announcement",
+          "settings": {
+            "text": "Free Shipping to the US, EU and UK",
+            "text_on_mobile": "",
+            "text_size": 15,
+            "link": "",
+            "enable_highlight": false,
+            "highlight_style": "marker"
+          }
+        },
+        "b5dbf241-732b-4aae-ab88-c08e989501de": {
+          "type": "announcement",
+          "settings": {
+            "text": "High Quality Metal & Glass Arts",
+            "text_on_mobile": "",
+            "text_size": 15,
+            "link": "shopify://collections/islamic-wall-art-metal",
+            "enable_highlight": false,
+            "highlight_style": "marker"
+          }
+        },
+        "d5847266-812e-4273-8d72-761968f93393": {
+          "type": "announcement",
+          "disabled": true,
+          "settings": {
+            "text": "Unique Islamic Jewelry",
+            "text_on_mobile": "Islamic Jewelry",
+            "text_size": 17,
+            "link": "shopify://collections/islamic-jewelry",
+            "enable_highlight": false,
+            "highlight_style": "marker"
+          }
+        },
+        "5c14c6be-4541-43d2-84f5-af631d7c7e6b": {
+          "type": "announcement",
+          "disabled": true,
+          "settings": {
+            "text": "Welcome to our store",
+            "text_on_mobile": "",
+            "text_size": 13,
+            "link": "",
+            "enable_highlight": false,
+            "highlight_style": "marker"
+          }
+        }
+      },
+      "block_order": [
+        "announcement-bar-0",
+        "b5dbf241-732b-4aae-ab88-c08e989501de",
+        "d5847266-812e-4273-8d72-761968f93393",
+        "5c14c6be-4541-43d2-84f5-af631d7c7e6b"
+      ],
+      "disabled": true,
+      "settings": {
+        "only_homepage": false,
+        "layout": "marquee",
+        "mobile_layout": "marquee",
+        "autorotate": true,
+        "autorotate_speed": 7,
+        "show_navigation": true,
+        "direction": "left",
+        "speed": 2.3,
+        "colors_text": "#ffffff",
+        "colors_background": "#3a3c3e",
+        "gradient_background": "",
+        "colors_highlight": "#ffb503",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "header",
+    "announcement-bar"
+  ]
+}
