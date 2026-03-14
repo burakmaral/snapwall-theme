@@ -92,7 +92,7 @@
             "content": "<p>Each panel is 2\u20132.5 cm of solid material \u2014 genuine 3D depth, not a flat print or peel-and-stick surface. The raised pattern creates real shadow lines that shift with light, giving your wall the appearance of authentic masonry. This is not wallpaper.<\/p>",
             "page": "",
             "custom_liquid": "",
-            "keep_open": false
+            "keep_open": true
           }
         },
         "collapsible_tab_install": {

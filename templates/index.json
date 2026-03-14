@@ -54,6 +54,57 @@
         "padding_bottom": 0
       }
     },
+    "value_props": {
+      "type": "value-propositions",
+      "blocks": {
+        "vp_thickness": {
+          "type": "proposition",
+          "settings": {
+            "icon": "thickness",
+            "heading": "2.5 cm True Thickness",
+            "heading_size": "h4",
+            "text": "<p>Solid architectural panels with real depth that creates true shadow lines — not a flat print or peel-and-stick surface.</p>"
+          }
+        },
+        "vp_acoustic": {
+          "type": "proposition",
+          "settings": {
+            "icon": "acoustic",
+            "heading": "Acoustic Insulation",
+            "heading_size": "h4",
+            "text": "<p>High-density polystyrene absorbs ambient noise, improving the acoustic comfort of any room.</p>"
+          }
+        },
+        "vp_material": {
+          "type": "proposition",
+          "settings": {
+            "icon": "material",
+            "heading": "Premium Material",
+            "heading_size": "h4",
+            "text": "<p>Engineered from high-density EPS — moisture-resistant, fire-rated, and built to last decades.</p>"
+          }
+        }
+      },
+      "block_order": ["vp_thickness", "vp_acoustic", "vp_material"],
+      "settings": {
+        "columns_desktop": 3,
+        "show_accent_line": true,
+        "horizontal_mobile": true,
+        "full_width": false,
+        "show_divider": false,
+        "heading": "",
+        "heading_size": "h1",
+        "heading_tag": "h2",
+        "heading_alignment": "center",
+        "use_custom_colors": false,
+        "colors_text": "#1E1B18",
+        "colors_accent": "#6B7C5E",
+        "colors_background": "#FAF8F5",
+        "gradient_background": "",
+        "padding_top": 52,
+        "padding_bottom": 52
+      }
+    },
     "guarantees_bar": {
       "type": "guarantees",
       "blocks": {
@@ -255,60 +306,47 @@
         "enable_media_shadow": false
       }
     },
-    "reveal_before_after": {
-      "type": "reveal-banner",
+    "before_after_slider": {
+      "type": "image-comparison",
       "blocks": {
-        "rb_heading": {
-          "type": "heading",
+        "ba_before": {
+          "type": "look",
           "settings": {
-            "heading": "See the Difference One Wall Makes",
-            "heading_size": "h0",
-            "heading_tag": "h2",
+            "title": "Before",
+            "title_size": "small",
+            "title_position": "end",
             "enable_highlight": false,
             "highlight_style": "marker"
           }
         },
-        "rb_slide": {
-          "type": "slide",
+        "ba_after": {
+          "type": "look",
           "settings": {
-            "heading": "One Wall. Complete Transformation.",
-         "heading_size": "h1",
-            "heading_tag": "h2",
-            "text": "<p>One afternoon. One wall. An entirely different space. 2.5 cm of architectural depth that delivers the look and feel of real masonry — without the weight, mess, or cost.<\/p>",
-            "text_size": "typeset2",
-            "secondary_color": false,
-            "button_label": "Shop Wall Panels",
-            "button_link": "shopify:\/\/collections\/all",
-            "button_size": "large",
-            "button_style_secondary": false,
-            "colors_button_label": "#FAF8F5",
-            "colors_button_background": "#141211",
-            "colors_text": "#1E1B18",
-            "colors_background": "#FAF8F5",
-            "gradient_background": "",
+            "title": "After",
+            "title_size": "small",
+            "title_position": "end",
             "enable_highlight": false,
             "highlight_style": "marker"
           }
         }
       },
-      "block_order": ["rb_heading", "rb_slide"],
+      "block_order": ["ba_before", "ba_after"],
       "settings": {
-        "image": "shopify:\/\/shop_images\/snapwall-strafor-wall-panels-decorated-an-outdoor.png",
-        "image_position": "center center",
-        "text_box_position": "middle",
-        "text_alignment": "center",
-        "image_ratio": "650px",
-        "full_width": true,
+        "layout": "horizontal",
+        "image_ratio": "550px",
+        "mobile_image_ratio": "300px",
+        "full_width": false,
         "show_divider": false,
-        "mobile_text_alignment": "center",
-        "mobile_image_ratio": "400px",
-        "show_text_below": true,
-        "colors_text": "#FAF8F5",
-        "colors_overlay": "#141211",
-        "colors_overlay_opacity": 32,
+        "heading": "See the Transformation",
+        "heading_size": "h0",
+        "heading_alignment": "center",
+        "heading_tag": "h2",
+        "colors_line": "#FAF8F5",
         "colors_highlight": "#6B7C5E",
         "padding_top": 80,
-        "padding_bottom": 0
+        "padding_bottom": 80,
+        "enable_highlight": false,
+        "highlight_style": "marker"
       }
     },
     "featured_collection": {
@@ -628,9 +666,10 @@
   },
   "order": [
     "hero",
+    "value_props",
     "guarantees_bar",
     "dual_scroll_story",
-    "reveal_before_after",
+    "before_after_slider",
     "featured_collection",
     "thickness_explainer",
     "lookbook_rooms",

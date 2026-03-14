@@ -3954,26 +3954,99 @@ details em:not(.highlighted-text),
   letter-spacing: -0.01em;
 }
 
-/* --- Before & After / Image Comparison --- */
-.image-comparison--editorial {
+/* --- Before & After / Image Comparison — Premium --- */
+
+/* Container */
+.image-comparison-section .title.h0 {
+  letter-spacing: -0.03em;
+  margin-bottom: 0.4em;
+}
+
+.image-comparison {
+  box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.08);
   border-radius: 2px;
+  overflow: hidden;
 }
 
-.image-comparison__button span {
-  background-color: var(--snapwall-accent);
-  color: #FAF8F5;
-  box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.15);
-}
-
+/* Divider line — thin, crisp, white */
 .image-comparison__button::before,
 .image-comparison__button::after {
-  background-color: var(--snapwall-accent);
-  opacity: 0.8;
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 1px !important;
+  opacity: 1;
+}
+
+/* Handle — frosted glass pill */
+.image-comparison__button span {
+  width: 3.6rem;
+  height: 3.6rem;
+  margin-left: -1.8rem;
+  margin-top: -1.8rem;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.85);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  box-shadow:
+    0 0.2rem 0.8rem rgba(0, 0, 0, 0.12),
+    0 0 0 1px rgba(255, 255, 255, 0.3);
+  transition: transform var(--duration-default) ease,
+              box-shadow var(--duration-default) ease;
+}
+
+/* Handle hover — lift */
+.image-comparison__button:hover span,
+.image-comparison.scrolling .image-comparison__button span {
+  transform: scale(1.1);
+  box-shadow:
+    0 0.4rem 1.6rem rgba(0, 0, 0, 0.18),
+    0 0 0 1px rgba(255, 255, 255, 0.4);
+}
+
+/* Custom SVG arrows inside the handle */
+.image-comparison__button .icon {
+  color: var(--snapwall-heading);
+  height: 1.4rem;
+  opacity: 0.7;
+  transition: opacity var(--duration-default) ease;
+}
+
+.image-comparison__button:hover .icon,
+.image-comparison.scrolling .icon {
+  opacity: 1;
+}
+
+/* Before/After labels — architectural pill badges */
+.image-comparison__title {
+  font-family: var(--font-heading-family);
+  font-weight: 500;
+  font-size: 1.2rem !important;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  min-width: auto !important;
+  padding: 0.6rem 1.4rem !important;
+  background-color: rgba(255, 255, 255, 0.85) !important;
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  color: var(--snapwall-heading) !important;
+  border: none !important;
+  border-radius: 2px;
+  box-shadow: 0 0.2rem 0.6rem rgba(0, 0, 0, 0.1);
 }
 
 /* Smooth slider interaction */
 .image-comparison.animating .image-comparison__after {
   transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+  transition-duration: 1.2s;
+}
+
+.image-comparison.animating .image-comparison__button {
+  transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+  transition-duration: 1.2s;
+}
+
+/* Cursor hint — active state */
+.image-comparison.scrolling {
+  cursor: col-resize;
 }
 
 /* --- Featured Collection Grid --- */
@@ -4040,7 +4113,7 @@ details em:not(.highlighted-text),
 }
 
 /* ============================================
-   SNAPWALL PDP — Premium Enhancements
+   SNAPWALL PDP — Premium Buy Box & Accordion
    ============================================ */
 
 /* --- Product Title --- */
@@ -4050,21 +4123,77 @@ details em:not(.highlighted-text),
   line-height: 1.02;
 }
 
+/* --- Price: Visual Anchor of Buy Box --- */
+.product-main--editorial .price__regular .price-item,
+.product-main--editorial .price__sale .price-item--sale {
+  font-family: var(--font-heading-family);
+  font-weight: 600;
+  font-size: clamp(2.2rem, 3vw, 2.8rem);
+  letter-spacing: -0.02em;
+  color: rgb(var(--color-foreground));
+}
+
+/* Struck-through compare-at price */
+.product-main--editorial .price__sale .price-item--regular {
+  font-family: var(--font-heading-family);
+  font-size: 1.6rem;
+  color: rgba(var(--color-foreground), 0.4);
+}
+
 /* --- Buy Box: Full-Width Add to Cart --- */
+.product-main--editorial .product-form__buttons--editorial {
+  gap: 1.2rem;
+}
+
 .product-main--editorial .product-form__submit {
   width: 100%;
-  min-height: 5.4rem;
+  min-height: 5.6rem;
+  border-radius: 2px;
   font-family: var(--font-heading-family);
   font-weight: 600;
   font-size: 1.4rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  transition: background-color var(--duration-default) ease,
-              transform var(--duration-default) ease;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: background-color var(--duration-long) ease,
+              transform var(--duration-default) ease,
+              box-shadow var(--duration-default) ease;
 }
 
-.product-main--editorial .product-form__submit:hover {
-  transform: translateY(-1px);
+/* Shimmer sweep on hover */
+.product-main--editorial .product-form__submit::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  transform: skew(-15deg);
+  background-image: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.15),
+    transparent
+  );
+  pointer-events: none;
+}
+
+@media screen and (hover: hover) {
+  .product-main--editorial .product-form__submit:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.12);
+  }
+
+  .product-main--editorial .product-form__submit:hover::after {
+    animation: shine var(--duration-animate) ease;
+  }
+}
+
+@keyframes shine {
+  to { left: 100%; }
 }
 
 /* Dynamic checkout button — match ATC width */
@@ -4074,17 +4203,25 @@ details em:not(.highlighted-text),
 
 .product-main--editorial .shopify-payment-button__button {
   width: 100%;
+  border-radius: 2px;
   font-family: var(--font-heading-family);
+}
+
+/* Quantity selector — architectural */
+.product-main--editorial .quantity--editorial {
+  min-height: 5.6rem;
+  border: 1px solid rgba(var(--color-foreground), 0.1);
+  border-radius: 2px;
 }
 
 /* --- Inline Guarantees (no Font Awesome) --- */
 .sw-pdp-guarantees {
   display: flex;
   flex-wrap: wrap;
-  gap: 1.4rem;
-  margin-top: 1.4rem;
-  padding-top: 1.4rem;
-  border-top: 1px solid var(--snapwall-border);
+  gap: 1.4rem 2rem;
+  margin-top: 1.6rem;
+  padding-top: 1.6rem;
+  border-top: 1px solid rgba(var(--color-foreground), 0.08);
 }
 
 .sw-pdp-guarantee {
@@ -4095,37 +4232,90 @@ details em:not(.highlighted-text),
   color: var(--snapwall-text-muted);
 }
 
-/* --- Collapsible Tabs / Accordion --- */
+/* --- Variant Labels --- */
+.product-main--editorial .product-form__input .form__label {
+  font-family: var(--font-heading-family);
+  font-size: 1.2rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* ============================================
+   PDP Accordion — Smooth Animation & Premium
+   ============================================ */
+
+/* Container: clean borders, remove double-border stacking */
+.product-main--editorial .accordion {
+  margin-top: 0;
+  border-top: 1px solid rgba(var(--color-foreground), 0.08);
+  border-bottom: none;
+}
+
+.product-main--editorial .accordion:last-of-type {
+  border-bottom: 1px solid rgba(var(--color-foreground), 0.08);
+}
+
+/* Summary row */
+.product-main--editorial .accordion summary {
+  padding: 1.8rem 0;
+  cursor: pointer;
+  list-style: none;
+  transition: color var(--duration-default) ease;
+}
+
+.product-main--editorial .accordion summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Title typography */
 .product-main--editorial .accordion .accordion__title {
   font-family: var(--font-heading-family);
   font-weight: 500;
   font-size: 1.4rem;
   letter-spacing: 0.01em;
+  max-width: none;
 }
 
+/* Caret rotation — smooth */
+.product-main--editorial .accordion summary .icon-caret {
+  transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+  flex-shrink: 0;
+}
+
+.product-main--editorial .accordion details[open] > summary .icon-caret {
+  transform: scaleY(-1);
+}
+
+/* Content area — smooth reveal via grid trick */
 .product-main--editorial .accordion .accordion__content {
   font-size: 1.35rem;
-  line-height: 1.7;
-  color: var(--snapwall-text-muted);
+  line-height: 1.75;
+  color: rgba(var(--color-foreground), 0.65);
+  padding-bottom: 2rem;
 }
 
+/* Spec labels inside accordion */
 .product-main--editorial .accordion .accordion__content strong {
-  color: var(--snapwall-text);
+  color: rgb(var(--color-foreground));
   font-weight: 500;
+  font-family: var(--font-heading-family);
 }
 
-/* --- Price: Premium Sizing --- */
-.product-main--editorial .price__regular .price-item,
-.product-main--editorial .price__sale .price-item--regular,
-.product-main--editorial .price__sale .price-item--sale {
-  font-family: var(--font-heading-family);
-  font-weight: 600;
-  letter-spacing: -0.02em;
+/* Highlight depth spec — accent color for "2.5 cm" and "Thickness" */
+.product-main--editorial .accordion .accordion__content em {
+  color: rgba(var(--color-foreground), 0.55);
+  font-style: italic;
 }
 
-/* --- Variant Labels --- */
-.product-main--editorial .product-form__input .form__label {
-  font-family: var(--font-heading-family);
+/* Hover state on summary — subtle */
+@media screen and (hover: hover) {
+  .product-main--editorial .accordion summary:hover {
+    color: var(--snapwall-accent);
+  }
+
+  .product-main--editorial .accordion summary:hover .icon-caret {
+    color: var(--snapwall-accent);
+  }
 }
 
 /* --- Sticky Gallery on Desktop --- */
@@ -4163,4 +4353,19 @@ details em:not(.highlighted-text),
 /* --- Separator: Lighter --- */
 .product-main--editorial .product-separator {
   border-color: rgba(var(--color-foreground), 0.06);
+}
+
+/* --- Mobile PDP adjustments --- */
+@media screen and (max-width: 749px) {
+  .product-main--editorial .product-form__submit {
+    min-height: 5.2rem;
+  }
+
+  .sw-pdp-guarantees {
+    gap: 1rem 1.6rem;
+  }
+
+  .sw-pdp-guarantee {
+    font-size: 1.1rem;
+  }
 }

@@ -1,0 +1,335 @@
+{%- style -%}
+  #shopify-section-{{ section.id }} {
+    --section-padding-top: {{ section.settings.padding_top }}px;
+    --section-padding-bottom: {{ section.settings.padding_bottom }}px;
+    --vp-columns: {{ section.blocks.size | at_most: section.settings.columns_desktop }};
+    {%- if section.settings.use_custom_colors %}
+      --gradient-background: {% if section.settings.gradient_background != blank %}{{ section.settings.gradient_background }}{% else %}{{ section.settings.colors_background }}{% endif %};
+      --color-background: {{ section.settings.colors_background.red }}, {{ section.settings.colors_background.green }}, {{ section.settings.colors_background.blue }};
+      --color-foreground: {{ section.settings.colors_text.red }}, {{ section.settings.colors_text.green }}, {{ section.settings.colors_text.blue }};
+      --color-heading: {{ section.settings.colors_text.red }}, {{ section.settings.colors_text.green }}, {{ section.settings.colors_text.blue }};
+      --color-accent: {{ section.settings.colors_accent.red }}, {{ section.settings.colors_accent.green }}, {{ section.settings.colors_accent.blue }};
+    {% endif -%}
+  }
+{%- endstyle -%}
+
+{{ 'section-value-propositions.css' | asset_url | stylesheet_tag }}
+
+{%- liquid
+  assign custom_class = ''
+  if section.settings.use_custom_colors
+    if section.settings.colors_background != settings.colors_background
+      assign custom_class = custom_class | append: ' value-props--colored'
+    endif
+  endif
+  if section.settings.horizontal_mobile
+    assign custom_class = custom_class | append: ' value-props--horizontal-mobile'
+  endif
+-%}
+
+<div class="section--padding{% if section.settings.show_divider %} section--divider{% endif %}">
+  <div class="page-width{% if section.settings.full_width %} page-width--full-width{% endif %}">
+    <div class="value-props{{ custom_class }}">
+
+      {%- if section.settings.heading != blank -%}
+        <div class="value-props__header {{ section.settings.heading_alignment }}">
+          <{{ section.settings.heading_tag }} class="title {{ section.settings.heading_size }}">
+            {{- section.settings.heading -}}
+          </{{ section.settings.heading_tag }}>
+        </div>
+      {%- endif -%}
+
+      {%- if section.blocks.size > 0 -%}
+        <ul class="value-props__grid value-props__grid--{{ section.blocks.size }}" role="list">
+          {%- for block in section.blocks -%}
+            <li class="value-props__item" {{ block.shopify_attributes }}>
+
+              {%- if section.settings.show_accent_line -%}
+                <hr class="value-props__accent">
+              {%- endif -%}
+
+              {%- if block.settings.icon != 'none' -%}
+                <div class="value-props__icon" aria-hidden="true">
+                  {%- case block.settings.icon -%}
+                    {%- when 'thickness' -%}
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 21V3h18v18H3z"/><path d="M3 8h18M3 16h18"/><line x1="8" y1="8" x2="8" y2="16"/><text x="10.5" y="13.5" font-size="5" fill="currentColor" stroke="none" font-family="sans-serif" font-weight="600">2.5</text></svg>
+                    {%- when 'acoustic' -%}
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2 10v4"/><path d="M6 6v12"/><path d="M10 3v18"/><path d="M14 6v12"/><path d="M18 10v4"/><path d="M22 11v2"/></svg>
+                    {%- when 'material' -%}
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                    {%- when 'fire_safe' -%}
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2c0 4-4 6-4 10a4 4 0 008 0c0-4-4-6-4-10z"/><line x1="4" y1="4" x2="20" y2="20" stroke-width="2"/></svg>
+                    {%- when 'moisture' -%}
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2.69l5.66 5.66a8 8 0 11-11.31 0z"/></svg>
+                    {%- when 'diy' -%}
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
+                    {%- when 'shield' -%}
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    {%- when 'weight' -%}
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3a3 3 0 00-3 3h6a3 3 0 00-3-3z"/><path d="M5 6h14l-1.5 15H6.5z"/></svg>
+                    {%- when 'ruler' -%}
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.7 7.3l-5-5a1 1 0 00-1.4 0l-12 12a1 1 0 000 1.4l5 5a1 1 0 001.4 0l12-12a1 1 0 000-1.4z"/><path d="M7 13.5L9.5 16"/><path d="M10 10.5L12.5 13"/><path d="M13 7.5L15.5 10"/></svg>
+                    {%- when 'custom' -%}
+                      {%- if block.settings.custom_icon != blank -%}
+                        {{ block.settings.custom_icon }}
+                      {%- endif -%}
+                  {%- endcase -%}
+                </div>
+              {%- endif -%}
+
+              <div class="value-props__content">
+                {%- if block.settings.heading != blank -%}
+                  <p class="value-props__heading {{ block.settings.heading_size }}">
+                    {{- block.settings.heading -}}
+                  </p>
+                {%- endif -%}
+                {%- if block.settings.text != blank -%}
+                  <div class="value-props__text rte">
+                    {{- block.settings.text -}}
+                  </div>
+                {%- endif -%}
+              </div>
+            </li>
+          {%- endfor -%}
+        </ul>
+      {%- endif -%}
+
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Value propositions",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "range",
+      "id": "columns_desktop",
+      "min": 2,
+      "max": 4,
+      "step": 1,
+      "default": 3,
+      "label": "Desktop columns"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_accent_line",
+      "default": true,
+      "label": "Show accent line above each item"
+    },
+    {
+      "type": "checkbox",
+      "id": "horizontal_mobile",
+      "default": true,
+      "label": "Horizontal layout on mobile"
+    },
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "default": false,
+      "label": "Full width"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_divider",
+      "default": false,
+      "label": "Show bottom border"
+    },
+    {
+      "type": "header",
+      "content": "Heading"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        { "value": "h2", "label": "Small" },
+        { "value": "h1", "label": "Medium" },
+        { "value": "h0", "label": "Large" }
+      ],
+      "default": "h1",
+      "label": "Heading size"
+    },
+    {
+      "type": "select",
+      "id": "heading_tag",
+      "options": [
+        { "value": "h2", "label": "H2" },
+        { "value": "h3", "label": "H3" },
+        { "value": "h4", "label": "H4" },
+        { "value": "div", "label": "div" }
+      ],
+      "default": "h2",
+      "label": "Heading tag (SEO)"
+    },
+    {
+      "type": "select",
+      "id": "heading_alignment",
+      "options": [
+        { "value": "left", "label": "Left" },
+        { "value": "center", "label": "Center" }
+      ],
+      "default": "center",
+      "label": "Heading alignment"
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "checkbox",
+      "id": "use_custom_colors",
+      "default": false,
+      "label": "Use custom colors"
+    },
+    {
+      "type": "color",
+      "id": "colors_text",
+      "label": "Text",
+      "default": "#1E1B18"
+    },
+    {
+      "type": "color",
+      "id": "colors_accent",
+      "label": "Accent (line & icons)",
+      "default": "#6B7C5E"
+    },
+    {
+      "type": "color",
+      "id": "colors_background",
+      "label": "Background",
+      "default": "#FAF8F5"
+    },
+    {
+      "type": "color_background",
+      "id": "gradient_background",
+      "label": "Gradient background"
+    },
+    {
+      "type": "header",
+      "content": "Padding"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Top padding",
+      "default": 52
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Bottom padding",
+      "default": 52
+    }
+  ],
+  "blocks": [
+    {
+      "type": "proposition",
+      "name": "Proposition",
+      "settings": [
+        {
+          "type": "select",
+          "id": "icon",
+          "options": [
+            { "value": "none", "label": "None" },
+            { "value": "thickness", "label": "Thickness (2.5cm)" },
+            { "value": "acoustic", "label": "Acoustic waves" },
+            { "value": "material", "label": "Material layers" },
+            { "value": "fire_safe", "label": "Fire safety" },
+            { "value": "moisture", "label": "Water droplet" },
+            { "value": "diy", "label": "DIY / Wrench" },
+            { "value": "shield", "label": "Shield" },
+            { "value": "weight", "label": "Lightweight" },
+            { "value": "ruler", "label": "Ruler / Dimensions" },
+            { "value": "custom", "label": "Custom SVG" }
+          ],
+          "default": "thickness",
+          "label": "Icon"
+        },
+        {
+          "type": "html",
+          "id": "custom_icon",
+          "label": "Custom SVG icon",
+          "info": "Paste an SVG tag. Only used when icon is set to \"Custom SVG\"."
+        },
+        {
+          "type": "inline_richtext",
+          "id": "heading",
+          "default": "Value proposition",
+          "label": "Heading"
+        },
+        {
+          "type": "select",
+          "id": "heading_size",
+          "options": [
+            { "value": "h5", "label": "Small" },
+            { "value": "h4", "label": "Medium" },
+            { "value": "h3", "label": "Large" }
+          ],
+          "default": "h4",
+          "label": "Heading size"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "default": "<p>Description of this value proposition.</p>",
+          "label": "Description"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Value propositions",
+      "blocks": [
+        {
+          "type": "proposition",
+          "settings": {
+            "icon": "thickness",
+            "heading": "2.5 cm True Thickness",
+            "text": "<p>Solid architectural panels with real depth that creates true shadow lines — not a flat print.</p>"
+          }
+        },
+        {
+          "type": "proposition",
+          "settings": {
+            "icon": "acoustic",
+            "heading": "Acoustic Insulation",
+            "text": "<p>High-density polystyrene absorbs ambient noise, improving the comfort of any room.</p>"
+          }
+        },
+        {
+          "type": "proposition",
+          "settings": {
+            "icon": "material",
+            "heading": "Premium Material",
+            "text": "<p>Engineered from high-density EPS — moisture-resistant, fire-rated, and built to last.</p>"
+          }
+        }
+      ]
+    }
+  ],
+  "disabled_on": {
+    "groups": ["header", "footer", "custom.overlay"]
+  }
+}
+{% endschema %}

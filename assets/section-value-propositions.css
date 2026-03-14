@@ -1,0 +1,168 @@
+/* ============================================
+   Value Propositions — Snapwall Design System
+   Pure CSS Grid layout, zero JS dependency.
+   ============================================ */
+
+.value-props {
+  color: rgb(var(--color-foreground));
+  background: var(--gradient-background);
+  background-color: rgb(var(--color-background));
+}
+
+.value-props__grid {
+  display: grid;
+  grid-template-columns: repeat(var(--vp-columns, 3), 1fr);
+  gap: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* --- Individual Prop Card --- */
+.value-props__item {
+  position: relative;
+  padding: clamp(2.4rem, 3.5vw, 4rem) clamp(2rem, 3vw, 3.6rem);
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+/* Vertical divider between cards (not on last) */
+.value-props__item:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  top: 20%;
+  right: 0;
+  height: 60%;
+  width: 1px;
+  background-color: rgba(var(--color-foreground), 0.08);
+}
+
+/* --- Accent Line --- */
+.value-props__accent {
+  width: 3.2rem;
+  height: 2px;
+  background-color: rgb(var(--color-accent, var(--color-foreground)));
+  border: none;
+  margin: 0;
+  flex-shrink: 0;
+}
+
+/* --- Icon --- */
+.value-props__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4.4rem;
+  height: 4.4rem;
+  flex-shrink: 0;
+  color: rgb(var(--color-accent, var(--color-foreground)));
+}
+
+.value-props__icon svg {
+  width: 2.8rem;
+  height: 2.8rem;
+  stroke-width: 1.5;
+  fill: none;
+  stroke: currentColor;
+}
+
+/* --- Text Content --- */
+.value-props__content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.value-props__heading {
+  margin: 0;
+  font-family: var(--font-heading-family);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+  color: rgb(var(--color-heading, var(--color-foreground)));
+}
+
+.value-props__heading.h5 { font-size: 1.3rem; }
+.value-props__heading.h4 { font-size: 1.5rem; }
+.value-props__heading.h3 { font-size: 1.8rem; }
+
+.value-props__text {
+  margin: 0;
+  font-family: var(--font-body-family);
+  font-size: 1.35rem;
+  line-height: 1.6;
+  color: rgba(var(--color-foreground), 0.65);
+}
+
+.value-props__text p {
+  margin: 0;
+}
+
+/* --- Section Header --- */
+.value-props__header {
+  max-width: 60rem;
+  margin-bottom: clamp(2.4rem, 4vw, 4.8rem);
+}
+
+.value-props__header.center {
+  margin-inline: auto;
+  text-align: center;
+}
+
+.value-props__header .title {
+  letter-spacing: -0.025em;
+}
+
+/* --- Tablet: 2 columns --- */
+@media screen and (max-width: 989px) and (min-width: 750px) {
+  .value-props__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Remove right divider on even items (end of row) */
+  .value-props__item:nth-child(2n)::after {
+    display: none;
+  }
+
+  /* Add bottom border on first row */
+  .value-props__grid--3 .value-props__item:nth-child(-n+2),
+  .value-props__grid--4 .value-props__item:nth-child(-n+2) {
+    border-bottom: 1px solid rgba(var(--color-foreground), 0.08);
+  }
+}
+
+/* --- Mobile: 1 column stack --- */
+@media screen and (max-width: 749px) {
+  .value-props__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .value-props__item::after {
+    display: none !important;
+  }
+
+  .value-props__item:not(:last-child) {
+    border-bottom: 1px solid rgba(var(--color-foreground), 0.08);
+  }
+
+  .value-props__item {
+    padding: 2rem 0;
+  }
+
+  /* Horizontal layout on mobile for compactness */
+  .value-props--horizontal-mobile .value-props__item {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 1.6rem;
+  }
+
+  .value-props--horizontal-mobile .value-props__accent {
+    display: none;
+  }
+}
+
+/* --- Colored variant --- */
+.value-props--colored {
+  padding-inline: clamp(1.5rem, 3vw, 5rem);
+}

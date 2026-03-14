@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -c \"import json; json.load\\(open\\(''c:/Users/Aegroth/Desktop/snapwall-theme/snapwall-theme/templates/index.json''\\)\\); print\\(''Valid JSON''\\)\")",
+      "Bash(python -c \"import json; json.load\\(open\\(''c:/Users/Aegroth/Desktop/snapwall-theme/snapwall-theme/templates/index.json''\\)\\); print\\(''Valid JSON''\\)\")"
+    ]
+  }
+}
