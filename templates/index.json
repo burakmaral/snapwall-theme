@@ -11,10 +11,10 @@
             "text_box_position": "middle-left",
             "subheading": "",
             "subheading_size": "h5",
-            "heading": "Real Brick. Zero Renovation.",
+            "heading": "Walls That Command Attention",
             "heading_size": "h0",
             "heading_tag": "h1",
-            "text": "3D styrofoam brick panels — 1 inch thick, lightweight, DIY in any room.",
+            "text": "Premium 3D wall panels — 2.5 cm of real depth, real shadow, real texture. Installed in an afternoon.",
             "text_size": "typeset2",
             "button_label": "Shop Wall Panels",
             "button_link": "shopify:\/\/collections\/all",
@@ -41,15 +41,15 @@
         "mobile_text_alignment": "left",
         "mobile_image_ratio": "100vh",
         "show_text_below": false,
-        "colors_button_label": "#faf7f2",
-        "colors_button_background": "#1E1A17",
-        "colors_text": "#faf7f2",
-        "colors_background": "#f4eee6",
-        "colors_overlay": "#1e1a17",
+        "colors_button_label": "#FAF8F5",
+        "colors_button_background": "#141211",
+        "colors_text": "#FAF8F5",
+        "colors_background": "#F0ECE6",
+        "colors_overlay": "#141211",
         "colors_overlay_opacity": 40,
-        "colors_navigation_text": "#faf7f2",
-        "colors_navigation_background": "#1E1A17",
-        "colors_highlight": "#c2572a",
+        "colors_navigation_text": "#FAF8F5",
+        "colors_navigation_background": "#141211",
+        "colors_highlight": "#6B7C5E",
         "padding_top": 0,
         "padding_bottom": 0
       }
@@ -65,7 +65,7 @@
             "custom_icon": "",
             "title": "Free Shipping",
             "title_size": "h5",
-            "text": "<p>US & EU orders<\/p>",
+            "text": "<p>US & EU delivery<\/p>",
             "enable_highlight": false,
             "highlight_style": "marker"
           }
@@ -102,9 +102,9 @@
             "icon": "clipboard",
             "icon_size": "small",
             "custom_icon": "",
-            "title": "Easy DIY Install",
+            "title": "2.5 cm True Depth",
             "title_size": "h5",
-            "text": "<p>No tools, no pro needed<\/p>",
+            "text": "<p>Real 3D panels, not wallpaper<\/p>",
             "enable_highlight": false,
             "highlight_style": "marker"
           }
@@ -124,11 +124,11 @@
         "columns_mobile": "2",
         "swipe_on_mobile": true,
         "use_custom_colors": true,
-        "colors_icon": "#c2572a",
-        "colors_text": "#2c2724",
-        "colors_background": "#f0ebe3",
+        "colors_icon": "#6B7C5E",
+        "colors_text": "#1E1B18",
+        "colors_background": "#F0ECE6",
         "gradient_background": "",
-        "colors_highlight": "#c2572a",
+        "colors_highlight": "#6B7C5E",
         "padding_top": 16,
         "padding_bottom": 16,
         "enable_highlight": false,
@@ -141,9 +141,9 @@
         "ds_intro": {
           "type": "slide",
           "settings": {
-            "title": "Not Wallpaper. Not Tile.",
-            "heading_size": "h0",
-            "description": "<p>1 inch of real texture that catches light and shadow like actual brick. These are 3D styrofoam panels — lightweight, cut with a box cutter, and installed in a single afternoon.<\/p><p>\u2714 Real 3D shadow depth<br\/>\u2714 Lightweight (no structural work)<br\/>\u2714 Cut with a box cutter<br\/>\u2714 Works indoors and outdoors<br\/>\u2714 Ships flat<\/p>",
+            "title": "Not Wallpaper. Not Tile. Real Depth.",
+         "heading_size": "h0",
+            "description": "<p>2.5 cm of architectural texture that catches light and casts real shadow — exactly like masonry. Premium 3D panels that are lightweight, cut with a utility knife, and installed in a single afternoon.<\/p><p>\u2714 2.5 cm true depth<br\/>\u2714 Lightweight — no structural work<br\/>\u2714 Installs with adhesive<br\/>\u2714 Indoor and outdoor rated<br\/>\u2714 Ships flat, worldwide<\/p>",
             "text_size": "typeset2",
             "secondary_color": false,
             "enable_highlight": false,
@@ -151,7 +151,7 @@
             "button_label": "Shop All Panels",
             "button_size": "medium",
             "button_link": "shopify:\/\/collections\/all",
-            "media_background_color": "#f0ebe3"
+            "media_background_color": "#F0ECE6"
           }
         },
         "ds_restaurant": {
@@ -166,7 +166,7 @@
             "highlight_style": "marker",
             "button_label": "",
             "button_size": "medium",
-            "media_background_color": "#f0ebe3"
+            "media_background_color": "#F0ECE6"
           }
         },
         "ds_office": {
@@ -181,7 +181,7 @@
             "highlight_style": "marker",
             "button_label": "",
             "button_size": "medium",
-            "media_background_color": "#f0ebe3"
+            "media_background_color": "#F0ECE6"
           }
         },
         "ds_kitchen": {
@@ -196,7 +196,7 @@
             "highlight_style": "marker",
             "button_label": "",
             "button_size": "medium",
-            "media_background_color": "#f0ebe3"
+            "media_background_color": "#F0ECE6"
           }
         },
         "ds_outdoor": {
@@ -211,7 +211,7 @@
             "highlight_style": "marker",
             "button_label": "",
             "button_size": "medium",
-            "media_background_color": "#f0ebe3"
+            "media_background_color": "#F0ECE6"
           }
         },
         "ds_bedroom": {
@@ -226,7 +226,7 @@
             "highlight_style": "marker",
             "button_label": "",
             "button_size": "medium",
-            "media_background_color": "#f0ebe3"
+            "media_background_color": "#F0ECE6"
           }
         }
       },
@@ -241,14 +241,14 @@
         "narrow": false,
         "padding_top": 80,
         "padding_bottom": 80,
-        "heading_color": "#1E1A17",
-        "text_color": "#2c2724",
-        "description_color": "#5a534e",
-        "panel_background_color": "#FAF7F2",
-        "border_color": "#e8e3db",
-        "button_background_color": "#1E1A17",
-        "button_text_color": "#FAF7F2",
-        "highlight_color": "#c2572a",
+        "heading_color": "#141211",
+        "text_color": "#1E1B18",
+        "description_color": "#7A7168",
+        "panel_background_color": "#FAF8F5",
+        "border_color": "#D9D3CB",
+        "button_background_color": "#141211",
+        "button_text_color": "#FAF8F5",
+        "highlight_color": "#6B7C5E",
         "transition_type": "scroll",
         "media_rotation": 0,
         "media_scale": 100,
@@ -271,20 +271,20 @@
         "rb_slide": {
           "type": "slide",
           "settings": {
-            "heading": "Transform Any Room",
-            "heading_size": "h1",
+            "heading": "One Wall. Complete Transformation.",
+         "heading_size": "h1",
             "heading_tag": "h2",
-            "text": "<p>One afternoon. One wall. A completely different space. Our 3D panels give you the look of real brick with none of the mess, weight, or cost of masonry.<\/p>",
+            "text": "<p>One afternoon. One wall. An entirely different space. 2.5 cm of architectural depth that delivers the look and feel of real masonry — without the weight, mess, or cost.<\/p>",
             "text_size": "typeset2",
             "secondary_color": false,
             "button_label": "Shop Wall Panels",
             "button_link": "shopify:\/\/collections\/all",
             "button_size": "large",
             "button_style_secondary": false,
-            "colors_button_label": "#FAF7F2",
-            "colors_button_background": "#1E1A17",
-            "colors_text": "#2c2724",
-            "colors_background": "#FAF7F2",
+            "colors_button_label": "#FAF8F5",
+            "colors_button_background": "#141211",
+            "colors_text": "#1E1B18",
+            "colors_background": "#FAF8F5",
             "gradient_background": "",
             "enable_highlight": false,
             "highlight_style": "marker"
@@ -303,10 +303,10 @@
         "mobile_text_alignment": "center",
         "mobile_image_ratio": "400px",
         "show_text_below": true,
-        "colors_text": "#faf7f2",
-        "colors_overlay": "#1e1a17",
+        "colors_text": "#FAF8F5",
+        "colors_overlay": "#141211",
         "colors_overlay_opacity": 32,
-        "colors_highlight": "#c2572a",
+        "colors_highlight": "#6B7C5E",
         "padding_top": 80,
         "padding_bottom": 0
       }
@@ -334,7 +334,7 @@
         "enable_quick_view": true,
         "enable_color_swatches": true,
         "enable_countdown": false,
-        "colors_highlight": "#c2572a",
+        "colors_highlight": "#6B7C5E",
         "padding_top": 80,
         "padding_bottom": 80,
         "enable_highlight": false,
@@ -347,7 +347,7 @@
         "te_heading": {
           "type": "heading",
           "settings": {
-            "heading": "Not a Sticker. Real Depth.",
+            "heading": "2.5 cm of Architectural Depth",
             "heading_size": "h0",
             "heading_tag": "h2",
             "enable_highlight": false,
@@ -357,7 +357,7 @@
         "te_text": {
           "type": "text",
           "settings": {
-            "text": "<p>These are NOT peel & stick, NOT wallpaper. They are genuine 3D panels with 1 inch (2.54 cm) of real thickness that creates true shadow lines and dimension on your wall. Applied with construction adhesive, cut with a box cutter — the result looks like real masonry at a fraction of the cost and weight.<\/p>",
+            "text": "<p>These are not peel-and-stick. Not wallpaper. Each panel is 2.5 cm of solid, high-density material that creates true shadow lines and architectural dimension. Applied with construction adhesive, trimmed with a utility knife — the result is indistinguishable from real masonry at a fraction of the cost and weight.<\/p>",
             "text_size": "typeset2",
             "secondary_color": false,
             "enable_highlight": false,
@@ -385,10 +385,10 @@
         "text_alignment": "left",
         "mobile_text_alignment": "left",
         "use_custom_colors": false,
-        "colors_text": "#2c2724",
-        "colors_background": "#FAF7F2",
+        "colors_text": "#1E1B18",
+        "colors_background": "#FAF8F5",
         "gradient_background": "",
-        "colors_highlight": "#c2572a",
+        "colors_highlight": "#6B7C5E",
         "padding_top": 80,
         "padding_bottom": 80
       }
@@ -423,9 +423,9 @@
         "heading_size": "h0",
         "heading_alignment": "center",
         "heading_tag": "h2",
-        "colors_overlay": "#1e1a17",
+        "colors_overlay": "#141211",
         "colors_overlay_opacity": 8,
-        "colors_highlight": "#c2572a",
+        "colors_highlight": "#6B7C5E",
         "padding_top": 80,
         "padding_bottom": 80,
         "enable_highlight": false,
@@ -476,7 +476,7 @@
         "heading_size": "h1",
         "heading_alignment": "center",
         "heading_tag": "h2",
-        "colors_highlight": "#c2572a",
+        "colors_highlight": "#6B7C5E",
         "padding_top": 80,
         "padding_bottom": 80,
         "enable_highlight": false,
@@ -568,7 +568,7 @@
         "heading_size": "h1",
         "heading_alignment": "center",
         "heading_tag": "h2",
-        "colors_highlight": "#c2572a",
+        "colors_highlight": "#6B7C5E",
         "padding_top": 80,
         "padding_bottom": 80,
         "enable_highlight": false,
@@ -607,11 +607,11 @@
         "mobile_text_alignment": "center",
         "full_width": true,
         "show_divider": false,
-        "colors_text": "#faf7f2",
-        "colors_border": "#5a534e",
-        "colors_background": "#1e1a17",
+        "colors_text": "#FAF8F5",
+        "colors_border": "#7A7168",
+        "colors_background": "#141211",
         "gradient_background": "",
-        "colors_highlight": "#c2572a",
+        "colors_highlight": "#6B7C5E",
         "padding_top": 80,
         "padding_bottom": 80
       }

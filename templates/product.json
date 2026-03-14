@@ -40,7 +40,7 @@
           "type": "text",
           "settings": {
             "icon": "none",
-            "text": "3D styrofoam brick panels with 1 inch of real depth. Lightweight, DIY-friendly, and designed for any flat surface \u2014 indoors or out. No tools, no contractor, no mess.",
+            "text": "Premium 3D wall panels with 2.5 cm of architectural depth. Lightweight, DIY-friendly, and designed for any flat surface \u2014 indoors or out.",
             "text_style": "body"
           }
         },
@@ -66,7 +66,7 @@
         "inline_guarantees": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "<div style=\"display:flex;flex-wrap:wrap;gap:14px;margin-top:14px;font-size:0.78rem;color:#555;border-top:1px solid #e8e8e8;padding-top:14px;\"><span><i class=\"fa fa-truck\"></i>&nbsp; Free Shipping US & EU</span><span><i class=\"fa fa-rotate-left\"></i>&nbsp; 30-Day Returns</span><span><i class=\"fa fa-lock\"></i>&nbsp; Secure Checkout</span><span><i class=\"fa fa-scissors\"></i>&nbsp; Easy DIY Install</span></div>"
+            "custom_liquid": "<div class=\"sw-pdp-guarantees\"><span class=\"sw-pdp-guarantee\">\u2713 Free Shipping US & EU<\/span><span class=\"sw-pdp-guarantee\">\u2713 30-Day Returns<\/span><span class=\"sw-pdp-guarantee\">\u2713 Secure Checkout<\/span><span class=\"sw-pdp-guarantee\">\u2713 2.5 cm Real Depth<\/span><\/div>"
           }
         },
         "separator_1": {
@@ -78,7 +78,7 @@
           "settings": {
             "icon": "none",
             "heading": "Product Details",
-            "content": "<p><strong>Material:</strong> High-density expanded polystyrene (EPS)<br\/><strong>Panel Size:</strong> 100cm x 50cm (0.5 m\u00b2 per panel)<br\/><strong>Thickness:</strong> 2 cm \/ ~1 inch<br\/><strong>Weight:</strong> Ultra-lightweight, approx. 100-200g per panel<br\/><strong>Fire Rating:</strong> Self-extinguishing material<br\/><strong>Moisture Resistance:</strong> Water-resistant, suitable for kitchens and bathrooms<\/p>",
+            "content": "<p><strong>Material:</strong> High-density expanded polystyrene (EPS)<br\/><strong>Panel Size:</strong> 100 cm \u00d7 50 cm (0.5 m\u00b2 per panel)<br\/><strong>Thickness:</strong> 2\u20132.5 cm of solid architectural depth<br\/><strong>Weight:</strong> Ultra-lightweight, approx. 100\u2013200 g per panel<br\/><strong>Fire Rating:</strong> Self-extinguishing material<br\/><strong>Moisture Resistance:</strong> Water-resistant \u2014 suitable for kitchens, bathrooms, and outdoor use<\/p>",
             "page": "",
             "custom_liquid": "",
             "keep_open": false
@@ -88,8 +88,8 @@
           "type": "collapsible_tab",
           "settings": {
             "icon": "none",
-            "heading": "Thickness & Texture",
-            "content": "<p>Each panel is 1 inch (2.54 cm) thick \u2014 this is genuine 3D depth, not a flat print or peel-and-stick surface. The raised brick pattern creates real shadow lines that shift with the light, giving your wall the appearance of authentic masonry. This is NOT wallpaper and NOT a sticker.<\/p>",
+            "heading": "2.5 cm Architectural Depth",
+            "content": "<p>Each panel is 2\u20132.5 cm of solid material \u2014 genuine 3D depth, not a flat print or peel-and-stick surface. The raised pattern creates real shadow lines that shift with light, giving your wall the appearance of authentic masonry. This is not wallpaper.<\/p>",
             "page": "",
             "custom_liquid": "",
             "keep_open": false
@@ -100,7 +100,7 @@
           "settings": {
             "icon": "none",
             "heading": "Installation Guide",
-            "content": "<p><strong>Step 1:</strong> Clean and dry your wall surface.<br\/><strong>Step 2:</strong> Apply construction adhesive to the back of each panel.<br\/><strong>Step 3:</strong> Press firmly onto the wall, hold for 30 seconds. Done.<\/p><p><em>Use a box cutter to trim panels at edges. No special tools needed. Optional: fix with screws for extra hold. Paint with any standard wall paint for a custom finish.<\/em><\/p>",
+            "content": "<p><strong>Step 1:</strong> Clean and dry your wall surface.<br\/><strong>Step 2:</strong> Apply construction adhesive to the back of each panel.<br\/><strong>Step 3:</strong> Press firmly onto the wall and hold for 30 seconds.<\/p><p><em>Trim panels with a utility knife at edges. Optional: fix with screws for extra hold. Paint with any standard wall paint for a custom finish.<\/em><\/p>",
             "page": "",
             "custom_liquid": "",
             "keep_open": false
@@ -215,7 +215,7 @@
             "highlight_style": "marker",
             "button_label": "",
             "button_size": "medium",
-            "media_background_color": "#f0ebe3"
+            "media_background_color": "#F0ECE6"
           }
         },
         "ig_step2": {
@@ -230,7 +230,7 @@
             "highlight_style": "marker",
             "button_label": "",
             "button_size": "medium",
-            "media_background_color": "#f0ebe3"
+            "media_background_color": "#F0ECE6"
           }
         },
         "ig_step3": {
@@ -245,7 +245,7 @@
             "highlight_style": "marker",
             "button_label": "",
             "button_size": "medium",
-            "media_background_color": "#f0ebe3"
+            "media_background_color": "#F0ECE6"
           }
         }
       },
@@ -260,14 +260,14 @@
         "narrow": false,
         "padding_top": 80,
         "padding_bottom": 80,
-        "heading_color": "#1E1A17",
-        "text_color": "#2c2724",
-        "description_color": "#5a534e",
-        "panel_background_color": "#FAF7F2",
-        "border_color": "#e8e3db",
-        "button_background_color": "#1E1A17",
-        "button_text_color": "#FAF7F2",
-        "highlight_color": "#c2572a",
+        "heading_color": "#141211",
+        "text_color": "#1E1B18",
+        "description_color": "#7A7168",
+        "panel_background_color": "#FAF8F5",
+        "border_color": "#D9D3CB",
+        "button_background_color": "#141211",
+        "button_text_color": "#FAF8F5",
+        "highlight_color": "#6B7C5E",
         "transition_type": "scroll",
         "media_rotation": 0,
         "media_scale": 100,
@@ -318,10 +318,10 @@
         "text_alignment": "left",
         "mobile_text_alignment": "left",
         "use_custom_colors": false,
-        "colors_text": "#2c2724",
-        "colors_background": "#FAF7F2",
+        "colors_text": "#1E1B18",
+        "colors_background": "#FAF8F5",
         "gradient_background": "",
-        "colors_highlight": "#c2572a",
+        "colors_highlight": "#6B7C5E",
         "padding_top": 0,
         "padding_bottom": 80
       }
@@ -413,11 +413,11 @@
         "columns_mobile": "2",
         "swipe_on_mobile": true,
         "use_custom_colors": true,
-        "colors_icon": "#c2572a",
-        "colors_text": "#2c2724",
-        "colors_background": "#f0ebe3",
+        "colors_icon": "#6B7C5E",
+        "colors_text": "#1E1B18",
+        "colors_background": "#F0ECE6",
         "gradient_background": "",
-        "colors_highlight": "#c2572a",
+        "colors_highlight": "#6B7C5E",
         "padding_top": 36,
         "padding_bottom": 36,
         "enable_highlight": false,
@@ -491,7 +491,7 @@
         "heading_size": "h1",
         "heading_alignment": "center",
         "heading_tag": "h2",
-        "colors_highlight": "#c2572a",
+        "colors_highlight": "#6B7C5E",
         "padding_top": 36,
         "padding_bottom": 36,
         "enable_highlight": false,
@@ -562,7 +562,7 @@
         "heading_size": "h1",
         "heading_alignment": "center",
         "heading_tag": "h2",
-        "colors_highlight": "#c2572a",
+        "colors_highlight": "#6B7C5E",
         "padding_top": 36,
         "padding_bottom": 36,
         "enable_highlight": false,
@@ -599,7 +599,7 @@
         "enable_quick_view": true,
         "enable_color_swatches": true,
         "enable_countdown": false,
-        "colors_highlight": "#c2572a",
+        "colors_highlight": "#6B7C5E",
         "padding_top": 36,
         "padding_bottom": 36,
         "enable_highlight": false,

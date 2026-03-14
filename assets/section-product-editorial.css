@@ -7,7 +7,7 @@
 /* ---- 1. Product Title — Editorial Serif ---- */
 
 .template-product .product__heading {
-  font-family: 'Poppins', 'Jost', sans-serif;
+  font-family: 'Urbanist', sans-serif;
   font-weight: 600;
   letter-spacing: -0.02em;
   text-transform: none;
@@ -17,11 +17,11 @@
 /* ---- 2. Product Media — Warm Background ---- */
 
 .template-product .product__media-wrapper {
-  background-color: #F5F0E8;
+  background-color: #F0ECE6;
 }
 
 .template-product .product__media-wrapper .media {
-  background-color: #F5F0E8;
+  background-color: #F0ECE6;
 }
 
 /* Smooth crossfade on thumbnail click */
@@ -33,9 +33,9 @@
 
 .template-product .price-item--regular,
 .template-product .price-item--sale {
-  font-family: 'Roboto', 'Jost', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 500;
-  color: #C2572A;
+  color: #6B7C5E;
 }
 
 .template-product .price--on-sale .price-item--regular {
@@ -49,18 +49,18 @@
   align-items: center;
   gap: 0.8rem;
   padding: 0.8rem 1.4rem;
-  background-color: #F0EBE3;
-  border-left: 3px solid #C2572A;
-  font-family: 'Roboto', 'Jost', sans-serif;
+  background-color: #F0ECE6;
+  border-left: 3px solid #6B7C5E;
+  font-family: 'Inter', sans-serif;
   font-size: 1.3rem;
   letter-spacing: 0.02em;
-  color: #2C2724;
+  color: #1E1B18;
   margin-top: 0.5rem;
 }
 
 .sw-coverage-badge svg {
   flex-shrink: 0;
-  color: #C2572A;
+  color: #6B7C5E;
 }
 
 /* ---- 5. Quantity Selector — Architectural Minimal ---- */
@@ -78,7 +78,7 @@
 
 .template-product .product-form__submit {
   border-radius: 0;
-  font-family: 'Roboto', 'Jost', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 500;
   letter-spacing: 0.15em;
   text-transform: uppercase;
@@ -103,7 +103,7 @@
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  font-family: 'Roboto', 'Jost', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1.2rem;
   color: rgba(var(--color-foreground), 0.6);
   letter-spacing: 0.02em;
@@ -111,7 +111,7 @@
 
 .sw-trust-badge svg {
   flex-shrink: 0;
-  color: #C2572A;
+  color: #6B7C5E;
   opacity: 0.8;
 }
 
@@ -126,7 +126,7 @@
 .sw-specs-table {
   width: 100%;
   border-collapse: collapse;
-  font-family: 'Roboto', 'Jost', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1.4rem;
 }
 
@@ -171,7 +171,7 @@
   justify-content: center;
   width: 4rem;
   height: 4rem;
-  font-family: 'Poppins', 'Jost', sans-serif;
+  font-family: 'Urbanist', sans-serif;
   font-size: 2rem;
   color: rgba(var(--color-foreground), 0.12);
   border: 1px solid rgba(var(--color-foreground), 0.08);
@@ -186,13 +186,13 @@
 
 .sw-install-step__content svg {
   flex-shrink: 0;
-  color: #C2572A;
+  color: #6B7C5E;
   margin-top: 0.2rem;
 }
 
 .sw-install-step__content p {
   margin: 0;
-  font-family: 'Roboto', 'Jost', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1.4rem;
   line-height: 1.6;
   color: rgb(var(--color-foreground));
@@ -201,7 +201,7 @@
 /* ---- 10. Accordion Tabs — Editorial Clean ---- */
 
 .template-product .product__accordion .summary__title {
-  font-family: 'Roboto', 'Jost', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 500;
   letter-spacing: 0.04em;
   text-transform: uppercase;
@@ -209,14 +209,14 @@
 }
 
 .template-product .product__accordion .accordion__content {
-  font-family: 'Roboto', 'Jost', sans-serif;
+  font-family: 'Inter', sans-serif;
   line-height: 1.7;
 }
 
 /* ---- 11. Product Description — Magazine Style ---- */
 
 .template-product .product__description {
-  font-family: 'Roboto', 'Jost', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1.5rem;
   line-height: 1.75;
   color: rgba(var(--color-foreground), 0.8);
@@ -230,7 +230,7 @@
 /* ---- 12. Texture Detail Section ---- */
 
 .template-product .image-with-text-overlay .banner__heading {
-  font-family: 'Poppins', 'Jost', sans-serif;
+  font-family: 'Urbanist', sans-serif;
   font-style: italic;
   letter-spacing: -0.02em;
 }
@@ -238,7 +238,7 @@
 /* ---- 13. Product Recommendations — Editorial ---- */
 
 .template-product .product-recommendations .title {
-  font-family: 'Poppins', 'Jost', sans-serif;
+  font-family: 'Urbanist', sans-serif;
   font-weight: 600;
   letter-spacing: -0.02em;
 }
@@ -252,7 +252,7 @@
 
 /* Editorial card styling for recommendations */
 .template-product .product-recommendations .card-information__text {
-  font-family: 'Roboto', 'Jost', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 1.4rem;
 }
@@ -260,7 +260,7 @@
 /* Quick-add on hover for recommendations */
 .template-product .product-recommendations .card-information__button .button {
   border-radius: 0;
-  font-family: 'Roboto', 'Jost', sans-serif;
+  font-family: 'Inter', sans-serif;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   font-size: 1.1rem;
@@ -269,7 +269,7 @@
 /* ---- 14. Scrolling Promotion Bar ---- */
 
 .template-product .scrolling-promotion .promotion__item {
-  font-family: 'Roboto', 'Jost', sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 /* ---- 15. Thumbnail gallery — sharper feel ---- */
@@ -280,24 +280,24 @@
 
 .template-product .thumbnail-list__item .media {
   border-radius: 0;
-  background-color: #F5F0E8;
+  background-color: #F0ECE6;
 }
 
 /* Active thumbnail ring */
 .template-product .thumbnail-list__item.is-active .thumbnail {
-  box-shadow: inset 0 0 0 2px #C2572A;
+  box-shadow: inset 0 0 0 2px #6B7C5E;
 }
 
 /* ---- 16. Product Info Text Badges ---- */
 
 .template-product .product__text .icon {
-  color: #C2572A;
+  color: #6B7C5E;
 }
 
 /* ---- 17. Breadcrumb — subtle, editorial ---- */
 
 .template-product .breadcrumb {
-  font-family: 'Roboto', 'Jost', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1.1rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;

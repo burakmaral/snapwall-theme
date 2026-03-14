@@ -1,23 +1,26 @@
 /* ============================================
-   SNAPWALL DESIGN SYSTEM — Warm Industrial Editorial
-   Font overrides (Google Fonts loaded in theme.liquid)
-   Color palette: terracotta, charcoal, warm cream
+   SNAPWALL DESIGN SYSTEM — Premium Architectural
+   Fonts: Urbanist (headings) + Inter (body)
+   Palette: sage accent, warm alabaster, editorial charcoal
    ============================================ */
 
 :root {
-  --font-heading-family: 'Poppins', 'Jost', sans-serif;
-  --font-body-family: 'Roboto', 'Jost', sans-serif;
+  /* Typography */
+  --font-heading-family: 'Urbanist', sans-serif;
+  --font-body-family: 'Inter', sans-serif;
   --font-heading-weight: 600;
   --font-body-weight: 400;
 
-  --snapwall-bg: #FAF7F2;
-  --snapwall-surface: #F0EBE3;
-  --snapwall-text: #2C2724;
-  --snapwall-text-muted: #8A7E76;
-  --snapwall-accent: #C2572A;
-  --snapwall-accent-hover: #A34520;
-  --snapwall-border: #D8D0C8;
-  --snapwall-heading: #1E1A17;
+  /* Core palette */
+  --snapwall-bg: #FAF8F5;
+  --snapwall-surface: #F0ECE6;
+  --snapwall-text: #1E1B18;
+  --snapwall-text-muted: #7A7168;
+  --snapwall-heading: #141211;
+  --snapwall-accent: #6B7C5E;
+  --snapwall-accent-hover: #556648;
+  --snapwall-border: #D9D3CB;
+  --snapwall-bronze: #B8976A;
 }
 
 /* Derived from base colors (theme settings) */
@@ -3890,4 +3893,274 @@ details em:not(.highlighted-text),
     animation: none;
     transition: none;
   }
+}
+
+/* ============================================
+   SNAPWALL HOMEPAGE — Premium Enhancements
+   ============================================ */
+
+/* --- Hero Section --- */
+/* Tighter heading tracking for Urbanist at large sizes */
+.slideshow .banner__heading.h0,
+.banner-section .banner__heading.h0 {
+  letter-spacing: -0.025em;
+  line-height: 1.05;
+}
+
+/* Elevated hero subtext */
+.slideshow .banner__text,
+.banner-section .banner__text {
+  max-width: 42ch;
+  letter-spacing: 0.01em;
+  line-height: 1.65;
+}
+
+/* Premium hero CTA */
+.slideshow .button--large,
+.banner-section .button--large {
+  padding: 1.6rem 3.6rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: 500;
+  transition: background-color var(--duration-default) ease,
+              transform var(--duration-default) ease;
+}
+
+.slideshow .button--large:hover,
+.banner-section .button--large:hover {
+  transform: translateY(-1px);
+}
+
+/* --- Guarantees / Value Prop Bar --- */
+.guarantees--editorial {
+  border-radius: 0;
+  border-color: rgba(var(--color-foreground), 0.06);
+}
+
+.guarantee__shell {
+  border-radius: 2px;
+  border-color: rgba(var(--color-foreground), 0.06);
+  transition: box-shadow var(--duration-default) ease;
+}
+
+.guarantee__shell:hover {
+  box-shadow: 0 1.8rem 3.6rem rgba(var(--color-foreground), 0.09);
+}
+
+.guarantee__title {
+  font-family: var(--font-heading-family);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+/* --- Before & After / Image Comparison --- */
+.image-comparison--editorial {
+  border-radius: 2px;
+}
+
+.image-comparison__button span {
+  background-color: var(--snapwall-accent);
+  color: #FAF8F5;
+  box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.15);
+}
+
+.image-comparison__button::before,
+.image-comparison__button::after {
+  background-color: var(--snapwall-accent);
+  opacity: 0.8;
+}
+
+/* Smooth slider interaction */
+.image-comparison.animating .image-comparison__after {
+  transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* --- Featured Collection Grid --- */
+.collection .card__heading a,
+.featured-collection .card__heading a {
+  font-family: var(--font-heading-family);
+  letter-spacing: -0.01em;
+}
+
+/* Subtle product card lift on hover */
+.card-wrapper:hover .card {
+  box-shadow: 0 1.2rem 3rem rgba(var(--color-foreground), 0.08);
+  transition: box-shadow var(--duration-default) ease;
+}
+
+/* Product card image container — clean edges */
+.card__media {
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+/* --- Section Headings — Global Premium Treatment --- */
+.title.h0 {
+  letter-spacing: -0.03em;
+  line-height: 1.08;
+}
+
+.title.h1 {
+  letter-spacing: -0.02em;
+  line-height: 1.12;
+}
+
+/* --- Newsletter / Email Capture --- */
+.newsletter .field__input {
+  border-radius: 2px;
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.newsletter .button {
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+}
+
+/* --- Testimonials --- */
+.testimonial__text {
+  font-style: italic;
+  line-height: 1.7;
+  max-width: 52ch;
+}
+
+.testimonial__author {
+  font-family: var(--font-heading-family);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--snapwall-text-muted);
+}
+
+/* --- FAQ Section --- */
+.accordion__title {
+  font-family: var(--font-heading-family);
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+
+/* ============================================
+   SNAPWALL PDP — Premium Enhancements
+   ============================================ */
+
+/* --- Product Title --- */
+.product-main--editorial .product__heading {
+  font-family: var(--font-heading-family);
+  letter-spacing: -0.03em;
+  line-height: 1.02;
+}
+
+/* --- Buy Box: Full-Width Add to Cart --- */
+.product-main--editorial .product-form__submit {
+  width: 100%;
+  min-height: 5.4rem;
+  font-family: var(--font-heading-family);
+  font-weight: 600;
+  font-size: 1.4rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: background-color var(--duration-default) ease,
+              transform var(--duration-default) ease;
+}
+
+.product-main--editorial .product-form__submit:hover {
+  transform: translateY(-1px);
+}
+
+/* Dynamic checkout button — match ATC width */
+.product-main--editorial .shopify-payment-button {
+  width: 100%;
+}
+
+.product-main--editorial .shopify-payment-button__button {
+  width: 100%;
+  font-family: var(--font-heading-family);
+}
+
+/* --- Inline Guarantees (no Font Awesome) --- */
+.sw-pdp-guarantees {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.4rem;
+  margin-top: 1.4rem;
+  padding-top: 1.4rem;
+  border-top: 1px solid var(--snapwall-border);
+}
+
+.sw-pdp-guarantee {
+  font-family: var(--font-body-family);
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--snapwall-text-muted);
+}
+
+/* --- Collapsible Tabs / Accordion --- */
+.product-main--editorial .accordion .accordion__title {
+  font-family: var(--font-heading-family);
+  font-weight: 500;
+  font-size: 1.4rem;
+  letter-spacing: 0.01em;
+}
+
+.product-main--editorial .accordion .accordion__content {
+  font-size: 1.35rem;
+  line-height: 1.7;
+  color: var(--snapwall-text-muted);
+}
+
+.product-main--editorial .accordion .accordion__content strong {
+  color: var(--snapwall-text);
+  font-weight: 500;
+}
+
+/* --- Price: Premium Sizing --- */
+.product-main--editorial .price__regular .price-item,
+.product-main--editorial .price__sale .price-item--regular,
+.product-main--editorial .price__sale .price-item--sale {
+  font-family: var(--font-heading-family);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+/* --- Variant Labels --- */
+.product-main--editorial .product-form__input .form__label {
+  font-family: var(--font-heading-family);
+}
+
+/* --- Sticky Gallery on Desktop --- */
+@media screen and (min-width: 750px) {
+  .product-main--editorial .product__media-gallery--sticky {
+    position: sticky;
+    top: 2rem;
+    align-self: start;
+  }
+}
+
+/* --- Gallery Frame: Clean Premium Edges --- */
+.product-main--editorial .product__gallery-frame {
+  border-color: rgba(var(--color-foreground), 0.06);
+  box-shadow: 0 1.6rem 4rem rgba(var(--color-foreground), 0.06);
+}
+
+/* --- Thumbnail Refinements --- */
+.product-main--editorial .thumbnail-list--editorial .thumbnail {
+  border-color: rgba(var(--color-foreground), 0.08);
+  transition: border-color var(--duration-default) ease;
+}
+
+.product-main--editorial .thumbnail-list--editorial .thumbnail:hover,
+.product-main--editorial .thumbnail-list--editorial .thumbnail.is-active {
+  border-color: var(--snapwall-accent);
+}
+
+/* --- Complementary Products Heading --- */
+.product-main--editorial .complementary .accordion__title {
+  font-family: var(--font-heading-family);
+  letter-spacing: -0.01em;
+}
+
+/* --- Separator: Lighter --- */
+.product-main--editorial .product-separator {
+  border-color: rgba(var(--color-foreground), 0.06);
 }
