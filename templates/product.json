@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -40,7 +49,7 @@
           "type": "text",
           "settings": {
             "icon": "none",
-            "text": "Premium 3D wall panels with 2.5 cm of architectural depth. Lightweight, DIY-friendly, and designed for any flat surface \u2014 indoors or out.",
+            "text": "Premium 3D wall panels with 2.5 cm of architectural depth. Lightweight, DIY-friendly, and designed for any flat surface — indoors or out.",
             "text_style": "body"
           }
         },
@@ -66,7 +75,7 @@
         "inline_guarantees": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "<div class=\"sw-pdp-guarantees\"><span class=\"sw-pdp-guarantee\">\u2713 Free Shipping US & EU<\/span><span class=\"sw-pdp-guarantee\">\u2713 30-Day Returns<\/span><span class=\"sw-pdp-guarantee\">\u2713 Secure Checkout<\/span><span class=\"sw-pdp-guarantee\">\u2713 2.5 cm Real Depth<\/span><\/div>"
+            "custom_liquid": "<div class=\"sw-pdp-guarantees\"><span class=\"sw-pdp-guarantee\">✓ Free Shipping US & EU</span><span class=\"sw-pdp-guarantee\">✓ 30-Day Returns</span><span class=\"sw-pdp-guarantee\">✓ Secure Checkout</span><span class=\"sw-pdp-guarantee\">✓ 2.5 cm Real Depth</span></div>"
           }
         },
         "separator_1": {
@@ -78,7 +87,7 @@
           "settings": {
             "icon": "none",
             "heading": "Product Details",
-            "content": "<p><strong>Material:</strong> High-density expanded polystyrene (EPS)<br\/><strong>Panel Size:</strong> 100 cm \u00d7 50 cm (0.5 m\u00b2 per panel)<br\/><strong>Thickness:</strong> 2\u20132.5 cm of solid architectural depth<br\/><strong>Weight:</strong> Ultra-lightweight, approx. 100\u2013200 g per panel<br\/><strong>Fire Rating:</strong> Self-extinguishing material<br\/><strong>Moisture Resistance:</strong> Water-resistant \u2014 suitable for kitchens, bathrooms, and outdoor use<\/p>",
+            "content": "<p><strong>Material:</strong> High-density expanded polystyrene (EPS)<br/><strong>Panel Size:</strong> 100 cm × 50 cm (0.5 m² per panel)<br/><strong>Thickness:</strong> 2–2.5 cm of solid architectural depth<br/><strong>Weight:</strong> Ultra-lightweight, approx. 100–200 g per panel<br/><strong>Fire Rating:</strong> Self-extinguishing material<br/><strong>Moisture Resistance:</strong> Water-resistant — suitable for kitchens, bathrooms, and outdoor use</p>",
             "page": "",
             "custom_liquid": "",
             "keep_open": false
@@ -89,7 +98,7 @@
           "settings": {
             "icon": "none",
             "heading": "2.5 cm Architectural Depth",
-            "content": "<p>Each panel is 2\u20132.5 cm of solid material \u2014 genuine 3D depth, not a flat print or peel-and-stick surface. The raised pattern creates real shadow lines that shift with light, giving your wall the appearance of authentic masonry. This is not wallpaper.<\/p>",
+            "content": "<p>Each panel is 2–2.5 cm of solid material — genuine 3D depth, not a flat print or peel-and-stick surface. The raised pattern creates real shadow lines that shift with light, giving your wall the appearance of authentic masonry. This is not wallpaper.</p>",
             "page": "",
             "custom_liquid": "",
             "keep_open": true
@@ -100,7 +109,7 @@
           "settings": {
             "icon": "none",
             "heading": "Installation Guide",
-            "content": "<p><strong>Step 1:</strong> Clean and dry your wall surface.<br\/><strong>Step 2:</strong> Apply construction adhesive to the back of each panel.<br\/><strong>Step 3:</strong> Press firmly onto the wall and hold for 30 seconds.<\/p><p><em>Trim panels with a utility knife at edges. Optional: fix with screws for extra hold. Paint with any standard wall paint for a custom finish.<\/em><\/p>",
+            "content": "<p><strong>Step 1:</strong> Clean and dry your wall surface.<br/><strong>Step 2:</strong> Apply construction adhesive to the back of each panel.<br/><strong>Step 3:</strong> Press firmly onto the wall and hold for 30 seconds.</p><p><em>Trim panels with a utility knife at edges. Optional: fix with screws for extra hold. Paint with any standard wall paint for a custom finish.</em></p>",
             "page": "",
             "custom_liquid": "",
             "keep_open": false
@@ -111,7 +120,7 @@
           "settings": {
             "icon": "none",
             "heading": "Shipping Info",
-            "content": "<p>Manufacturing takes 2-3 days. Delivery generally takes 3-5 business days. Free shipping to the US and EU. Panels ship flat and lightweight. US, UK, EU, and Canada residents do not pay customs fees or import taxes.<\/p>",
+            "content": "<p>Manufacturing takes 2-3 days. Delivery generally takes 3-5 business days. Free shipping to the US and EU. Panels ship flat and lightweight. US, UK, EU, and Canada residents do not pay customs fees or import taxes.</p>",
             "page": "",
             "custom_liquid": "",
             "keep_open": false
@@ -122,7 +131,7 @@
           "settings": {
             "icon": "none",
             "heading": "FAQ",
-            "content": "<p><strong>Can I paint these?<\/strong><br\/>Yes \u2014 any standard interior wall paint works. Use a roller or spray for best results.<\/p><p><strong>Outdoor use?<\/strong><br\/>Yes. Our panels are moisture-resistant and weather-resistant.<\/p><p><strong>How many panels per m\u00b2?<\/strong><br\/>Each panel covers 0.5 m\u00b2 (100cm x 50cm), so 2 panels per square meter.<\/p><p><strong>How do I cut them?<\/strong><br\/>A standard box cutter or utility knife cuts through easily along a straight edge.<\/p>",
+            "content": "<p><strong>Can I paint these?</strong><br/>Yes — any standard interior wall paint works. Use a roller or spray for best results.</p><p><strong>Outdoor use?</strong><br/>Yes. Our panels are moisture-resistant and weather-resistant.</p><p><strong>How many panels per m²?</strong><br/>Each panel covers 0.5 m² (100cm x 50cm), so 2 panels per square meter.</p><p><strong>How do I cut them?</strong><br/>A standard box cutter or utility knife cuts through easily along a straight edge.</p>",
             "page": "",
             "custom_liquid": "",
             "keep_open": false
@@ -208,7 +217,7 @@
           "settings": {
             "title": "1. Prepare Your Wall",
             "heading_size": "h1",
-            "description": "<p>Clean and dry your wall surface. Ensure it is smooth and free of dust, grease, or loose paint. A clean surface ensures the strongest adhesive bond.<\/p>",
+            "description": "<p>Clean and dry your wall surface. Ensure it is smooth and free of dust, grease, or loose paint. A clean surface ensures the strongest adhesive bond.</p>",
             "text_size": "typeset2",
             "secondary_color": false,
             "enable_highlight": false,
@@ -223,7 +232,7 @@
           "settings": {
             "title": "2. Apply Adhesive & Press",
             "heading_size": "h1",
-            "description": "<p>Apply construction adhesive to the back of each panel in a zigzag pattern. Press firmly onto the wall and hold for 30 seconds. Align edges with adjacent panels as you go.<\/p>",
+            "description": "<p>Apply construction adhesive to the back of each panel in a zigzag pattern. Press firmly onto the wall and hold for 30 seconds. Align edges with adjacent panels as you go.</p>",
             "text_size": "typeset2",
             "secondary_color": false,
             "enable_highlight": false,
@@ -238,7 +247,7 @@
           "settings": {
             "title": "3. Trim & Finish",
             "heading_size": "h1",
-            "description": "<p>Use a box cutter or utility knife to trim panels around outlets, corners, and edges. Optional: paint with any standard wall paint to match your color scheme. That's it \u2014 you're done.<\/p>",
+            "description": "<p>Use a box cutter or utility knife to trim panels around outlets, corners, and edges. Optional: paint with any standard wall paint to match your color scheme. That's it — you're done.</p>",
             "text_size": "typeset2",
             "secondary_color": false,
             "enable_highlight": false,
@@ -249,7 +258,11 @@
           }
         }
       },
-      "block_order": ["ig_step1", "ig_step2", "ig_step3"],
+      "block_order": [
+        "ig_step1",
+        "ig_step2",
+        "ig_step3"
+      ],
       "settings": {
         "heading": "Install It Yourself. Seriously.",
         "heading_size": "h0",
@@ -290,7 +303,7 @@
         "ruc_text": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>Restaurant<\/strong> \u2014 Warm, inviting atmosphere<br\/><strong>Office<\/strong> \u2014 Professional design statement<br\/><strong>Kitchen<\/strong> \u2014 Moisture-resistant backsplash alternative<br\/><strong>Outdoor<\/strong> \u2014 Weather-resistant patio walls<br\/><strong>Living Room<\/strong> \u2014 Accent wall focal point<br\/><strong>Bedroom<\/strong> \u2014 Headboard feature wall<\/p>",
+            "text": "<p><strong>Restaurant</strong> — Warm, inviting atmosphere<br/><strong>Office</strong> — Professional design statement<br/><strong>Kitchen</strong> — Moisture-resistant backsplash alternative<br/><strong>Outdoor</strong> — Weather-resistant patio walls<br/><strong>Living Room</strong> — Accent wall focal point<br/><strong>Bedroom</strong> — Headboard feature wall</p>",
             "text_size": "typeset2",
             "secondary_color": false,
             "enable_highlight": false,
@@ -300,22 +313,24 @@
         "ruc_button": {
           "type": "button",
           "settings": {
-            "button_label": "Shop All Panels",
-            "button_link": "shopify:\/\/collections\/all",
             "button_size": "medium",
-            "button_style_secondary": false,
-            "enable_highlight": false,
-            "highlight_style": "marker"
+            "button_label": "Shop All Panels",
+            "button_link": "shopify://collections/all",
+            "button_style_secondary": false
           }
         }
       },
-      "block_order": ["ruc_heading", "ruc_text", "ruc_button"],
+      "block_order": [
+        "ruc_heading",
+        "ruc_text",
+        "ruc_button"
+      ],
       "settings": {
         "image_position": "right",
+        "text_alignment": "left",
         "image_ratio": "adapt",
         "full_width": false,
         "show_divider": false,
-        "text_alignment": "left",
         "mobile_text_alignment": "left",
         "use_custom_colors": false,
         "colors_text": "#1E1B18",
@@ -354,7 +369,7 @@
             "custom_icon": "",
             "title": "Free Shipping",
             "title_size": "h4",
-            "text": "<p>Free delivery to the US and EU on all orders.<\/p>",
+            "text": "<p>Free delivery to the US and EU on all orders.</p>",
             "enable_highlight": false,
             "highlight_style": "marker"
           }
@@ -367,7 +382,7 @@
             "custom_icon": "",
             "title": "Easy Returns",
             "title_size": "h4",
-            "text": "<p>30-day hassle-free return policy.<\/p>",
+            "text": "<p>30-day hassle-free return policy.</p>",
             "enable_highlight": false,
             "highlight_style": "marker"
           }
@@ -380,7 +395,7 @@
             "custom_icon": "",
             "title": "Quality Guaranteed",
             "title_size": "h4",
-            "text": "<p>Handcrafted from high-density polystyrene for lasting quality.<\/p>",
+            "text": "<p>Handcrafted from high-density polystyrene for lasting quality.</p>",
             "enable_highlight": false,
             "highlight_style": "marker"
           }
@@ -393,13 +408,18 @@
             "custom_icon": "",
             "title": "Fire Rated",
             "title_size": "h4",
-            "text": "<p>Self-extinguishing material, safe for residential and commercial use.<\/p>",
+            "text": "<p>Self-extinguishing material, safe for residential and commercial use.</p>",
             "enable_highlight": false,
             "highlight_style": "marker"
           }
         }
       },
-      "block_order": ["guarantee-0", "guarantee-1", "guarantee-2", "guarantee-3"],
+      "block_order": [
+        "guarantee-0",
+        "guarantee-1",
+        "guarantee-2",
+        "guarantee-3"
+      ],
       "settings": {
         "layout": "default",
         "column_alignment": "center",
@@ -431,7 +451,7 @@
           "type": "question",
           "settings": {
             "title": "How do I install these panels?",
-            "text": "<p>Apply construction adhesive to the back of each panel and press onto a clean, dry wall \u2014 or fix with screws for extra hold. Use a utility knife to cut panels to size. Most walls are completed in one afternoon.<\/p>",
+            "text": "<p>Apply construction adhesive to the back of each panel and press onto a clean, dry wall — or fix with screws for extra hold. Use a utility knife to cut panels to size. Most walls are completed in one afternoon.</p>",
             "enable_highlight": false,
             "highlight_style": "marker"
           }
@@ -440,7 +460,7 @@
           "type": "question",
           "settings": {
             "title": "Can I paint the panels?",
-            "text": "<p>Yes! Our panels accept any standard interior wall paint. Use a roller or spray paint for the best finish. This lets you match any color scheme perfectly.<\/p>",
+            "text": "<p>Yes! Our panels accept any standard interior wall paint. Use a roller or spray paint for the best finish. This lets you match any color scheme perfectly.</p>",
             "enable_highlight": false,
             "highlight_style": "marker"
           }
@@ -449,7 +469,7 @@
           "type": "question",
           "settings": {
             "title": "Are the panels moisture resistant?",
-            "text": "<p>Yes. Our high-density polystyrene panels are water-resistant and suitable for kitchens, bathrooms, and humid environments. They won't warp, rot, or develop mold.<\/p>",
+            "text": "<p>Yes. Our high-density polystyrene panels are water-resistant and suitable for kitchens, bathrooms, and humid environments. They won't warp, rot, or develop mold.</p>",
             "enable_highlight": false,
             "highlight_style": "marker"
           }
@@ -458,7 +478,7 @@
           "type": "question",
           "settings": {
             "title": "How do I replace a damaged panel?",
-            "text": "<p>Use a chisel or oscillating tool to carefully remove the damaged panel and scrape off old adhesive. Clean the surface, apply fresh construction adhesive to the replacement panel, and press into place. Some touch-up painting may be needed afterward.<\/p>",
+            "text": "<p>Use a chisel or oscillating tool to carefully remove the damaged panel and scrape off old adhesive. Clean the surface, apply fresh construction adhesive to the replacement panel, and press into place. Some touch-up painting may be needed afterward.</p>",
             "enable_highlight": false,
             "highlight_style": "marker"
           }
@@ -467,7 +487,7 @@
           "type": "question",
           "settings": {
             "title": "How long does shipping take?",
-            "text": "<p>Manufacturing takes 2-3 days and delivery generally takes 3-5 business days. Free shipping to US and EU. US, UK, EU, and Canada residents do not pay customs fees or import taxes.<\/p>",
+            "text": "<p>Manufacturing takes 2-3 days and delivery generally takes 3-5 business days. Free shipping to US and EU. US, UK, EU, and Canada residents do not pay customs fees or import taxes.</p>",
             "enable_highlight": false,
             "highlight_style": "marker"
           }
@@ -476,13 +496,20 @@
           "type": "question",
           "settings": {
             "title": "What is your return policy?",
-            "text": "<p>We offer a 30-day return policy. If you're not completely satisfied, contact us and we'll guide you through the return process.<\/p>",
+            "text": "<p>We offer a 30-day return policy. If you're not completely satisfied, contact us and we'll guide you through the return process.</p>",
             "enable_highlight": false,
             "highlight_style": "marker"
           }
         }
       },
-      "block_order": ["pf_q1", "pf_q2", "pf_q3", "pf_q4", "pf_q5", "pf_q6"],
+      "block_order": [
+        "pf_q1",
+        "pf_q2",
+        "pf_q3",
+        "pf_q4",
+        "pf_q5",
+        "pf_q6"
+      ],
       "settings": {
         "narrow": true,
         "secondary_background": false,
@@ -505,8 +532,8 @@
           "type": "testimonial",
           "settings": {
             "icon": "5",
-            "text": "<p>I finished our accent wall in one afternoon. The texture looks far more expensive than it is. Every guest asks who designed it.<\/p>",
-            "author": "Ayse K. \u2014 Istanbul",
+            "text": "<p>I finished our accent wall in one afternoon. The texture looks far more expensive than it is. Every guest asks who designed it.</p>",
+            "author": "Ayse K. — Istanbul",
             "enable_highlight": false,
             "highlight_style": "marker"
           }
@@ -515,8 +542,8 @@
           "type": "testimonial",
           "settings": {
             "icon": "5",
-            "text": "<p>We wanted the look of old brick without the weight. These panels gave the room instant character and were incredibly simple to install.<\/p>",
-            "author": "Mehmet D. \u2014 Ankara",
+            "text": "<p>We wanted the look of old brick without the weight. These panels gave the room instant character and were incredibly simple to install.</p>",
+            "author": "Mehmet D. — Ankara",
             "enable_highlight": false,
             "highlight_style": "marker"
           }
@@ -525,8 +552,8 @@
           "type": "testimonial",
           "settings": {
             "icon": "5",
-            "text": "<p>The finish photographs beautifully and looks even better in person. Turned a plain wall into the focal point of the apartment.<\/p>",
-            "author": "Sarah L. \u2014 London",
+            "text": "<p>The finish photographs beautifully and looks even better in person. Turned a plain wall into the focal point of the apartment.</p>",
+            "author": "Sarah L. — London",
             "enable_highlight": false,
             "highlight_style": "marker"
           }
@@ -535,8 +562,8 @@
           "type": "testimonial",
           "settings": {
             "icon": "5",
-            "text": "<p>Ordered 40 panels for our restaurant entrance. The brick effect looks completely real. Installation was easy and the result is stunning.<\/p>",
-            "author": "Marco R. \u2014 Milan",
+            "text": "<p>Ordered 40 panels for our restaurant entrance. The brick effect looks completely real. Installation was easy and the result is stunning.</p>",
+            "author": "Marco R. — Milan",
             "enable_highlight": false,
             "highlight_style": "marker"
           }
@@ -545,14 +572,20 @@
           "type": "testimonial",
           "settings": {
             "icon": "5",
-            "text": "<p>Best wall upgrade we've ever done. Painted them to match our bedroom palette and the 3D effect is incredible. Highly recommend.<\/p>",
-            "author": "Emma W. \u2014 New York",
+            "text": "<p>Best wall upgrade we've ever done. Painted them to match our bedroom palette and the 3D effect is incredible. Highly recommend.</p>",
+            "author": "Emma W. — New York",
             "enable_highlight": false,
             "highlight_style": "marker"
           }
         }
       },
-      "block_order": ["testimonial-0", "testimonial-1", "testimonial-2", "testimonial-3", "testimonial-4"],
+      "block_order": [
+        "testimonial-0",
+        "testimonial-1",
+        "testimonial-2",
+        "testimonial-3",
+        "testimonial-4"
+      ],
       "settings": {
         "autorotate": true,
         "autorotate_speed": 5,

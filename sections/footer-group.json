@@ -1,1 +1,91 @@
-{"name":"t:sections.footer-group.name","type":"footer","sections":{"footer":{"type":"footer","blocks":{"1a7ce24c-1792-4882-9be9-61dc4142409e":{"type":"image","settings":{"image_width":130,"alignment":"center","link":"https:\/\/shukranislamicarts.com","text":"","enable_highlight":false,"highlight_style":"marker"}},"d3e46e2b-e474-49e5-8a0e-ce864e266dc9":{"type":"text","settings":{"heading":"ABOUT US","subtext":"<p>MDN LLC <br\/>(EIN: 35-2763606)<\/p><p>8 The GRN <br\/>STE 13776, <br\/>Dover DE, 19901<br\/>UNITED STATES <br\/><br\/>+1 (302) 742-3069<\/p>","enable_highlight":false,"highlight_style":"marker"}},"1f5697cb-0641-4f5f-9d94-de244d5f303c":{"type":"link_list","settings":{"heading":"information","menu":"contact-us","enable_highlight":false,"highlight_style":"marker"}},"footer-0":{"type":"link_list","settings":{"heading":"categories","menu":"main-menu","enable_highlight":false,"highlight_style":"marker"}}},"block_order":["1a7ce24c-1792-4882-9be9-61dc4142409e","d3e46e2b-e474-49e5-8a0e-ce864e266dc9","1f5697cb-0641-4f5f-9d94-de244d5f303c","footer-0"],"settings":{"show_divider":true,"newsletter_enable":true,"newsletter_heading":"NEWSLETTER SIGN-UP","newsletter_text":"<p>Apply for our newsletter to receive exclusive deals, news, and events.<\/p>","return_url":"","enable_follow_on_shop":false,"show_social":true,"social_heading":"LET'S KEEP IN TOUCH","enable_country_selector":true,"enable_language_selector":true,"payment_enable":true,"show_policy":false,"copyright_text":"All rights reserved.","colors_text":"#D9D3CB","colors_heading":"#FAF8F5","colors_link":"#D9D3CB","colors_border":"#2E2A27","colors_background":"#1E1B18","gradient_background":"","colors_highlight":"#6B7C5E","enable_highlight":false,"highlight_style":"marker"}}},"order":["footer"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "name": "t:sections.footer-group.name",
+  "type": "footer",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "1a7ce24c-1792-4882-9be9-61dc4142409e": {
+          "type": "image",
+          "settings": {
+            "image_width": 130,
+            "alignment": "center",
+            "link": "https://shukranislamicarts.com",
+            "text": "",
+            "enable_highlight": false,
+            "highlight_style": "marker"
+          }
+        },
+        "d3e46e2b-e474-49e5-8a0e-ce864e266dc9": {
+          "type": "text",
+          "settings": {
+            "heading": "ABOUT US",
+            "subtext": "<p>MDN LLC <br/>(EIN: 35-2763606)</p><p>8 The GRN <br/>STE 13776, <br/>Dover DE, 19901<br/>UNITED STATES <br/><br/>+1 (302) 742-3069</p>",
+            "enable_highlight": false,
+            "highlight_style": "marker"
+          }
+        },
+        "1f5697cb-0641-4f5f-9d94-de244d5f303c": {
+          "type": "link_list",
+          "settings": {
+            "heading": "information",
+            "menu": "contact-us",
+            "enable_highlight": false,
+            "highlight_style": "marker"
+          }
+        },
+        "footer-0": {
+          "type": "link_list",
+          "settings": {
+            "heading": "categories",
+            "menu": "main-menu",
+            "enable_highlight": false,
+            "highlight_style": "marker"
+          }
+        }
+      },
+      "block_order": [
+        "1a7ce24c-1792-4882-9be9-61dc4142409e",
+        "d3e46e2b-e474-49e5-8a0e-ce864e266dc9",
+        "1f5697cb-0641-4f5f-9d94-de244d5f303c",
+        "footer-0"
+      ],
+      "settings": {
+        "show_divider": true,
+        "newsletter_enable": true,
+        "newsletter_heading": "NEWSLETTER SIGN-UP",
+        "newsletter_text": "<p>Apply for our newsletter to receive exclusive deals, news, and events.</p>",
+        "return_url": "",
+        "enable_follow_on_shop": false,
+        "show_social": true,
+        "social_heading": "LET'S KEEP IN TOUCH",
+        "enable_country_selector": true,
+        "enable_language_selector": true,
+        "payment_enable": true,
+        "show_policy": false,
+        "copyright_text": "All rights reserved.",
+        "colors_text": "#D9D3CB",
+        "colors_heading": "#FAF8F5",
+        "colors_link": "#D9D3CB",
+        "colors_border": "#2E2A27",
+        "colors_background": "#1E1B18",
+        "gradient_background": "",
+        "colors_highlight": "#6B7C5E",
+        "enable_highlight": false,
+        "highlight_style": "marker"
+      }
+    }
+  },
+  "order": [
+    "footer"
+  ]
+}
