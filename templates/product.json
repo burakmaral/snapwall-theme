@@ -75,7 +75,7 @@
         "inline_guarantees": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "<div class=\"sw-pdp-guarantees\"><span class=\"sw-pdp-guarantee\">✓ Free Shipping US & EU</span><span class=\"sw-pdp-guarantee\">✓ 30-Day Returns</span><span class=\"sw-pdp-guarantee\">✓ Secure Checkout</span><span class=\"sw-pdp-guarantee\">✓ 2.5 cm Real Depth</span></div>"
+            "custom_liquid": "<div class=\"sw-pdp-guarantees\"><span class=\"sw-pdp-guarantee\"><svg class=\"sw-pdp-guarantee__icon\" xmlns=\"http://www.w3.org/2000/svg\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" viewBox=\"0 0 640 512\"><path d=\"M272 192C280.8 192 288 184.8 288 176C288 167.2 280.8 160 272 160h-224C39.16 160 32 167.2 32 176C32 184.8 39.16 192 47.1 192H272zM624 384H608V247.7c0-19.08-6.844-37.56-19.25-52.05l-71.02-82.86C508.6 102.1 495.3 96 481.3 96H416V64c0-35.35-28.65-64-64-64H128C92.65 0 64 28.65 64 64v32H15.1C7.164 96 0 103.2 0 111.1C0 120.8 7.164 128 15.1 128h224C248.8 128 256 120.8 256 112C256 103.2 248.8 96 240 96H96V64c0-17.67 14.33-32 32-32h224c17.67 0 32 14.33 32 32v224c0 8.836 7.164 16 16 16S416 296.8 416 288V256h160v128h-5.6C557.2 346.8 521.7 320 480 320s-77.18 26.77-90.4 64H250.1C236.9 346.8 201.7 320 160 320c-24.7 0-46.99 9.59-64 24.91V256h144C248.8 256 256 248.8 256 240C256 231.2 248.8 224 240 224h-224C7.164 224 0 231.2 0 240C0 248.8 7.164 256 15.1 256H64v160c0 53.02 42.98 96 96 96s96-42.98 96-96h128c0 52.94 43.06 96 96 96s96-43.06 96-96h48c8.844 0 16-7.156 16-16S632.8 384 624 384zM416 224V128h65.28c4.688 0 9.109 2.031 12.14 5.578l71.03 82.86C566.5 218.8 568.2 221.3 569.7 224H416zM160 480c-35.29 0-64-28.71-64-64s28.71-64 64-64s64 28.71 64 64S195.3 480 160 480zM480 480c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64S515.3 480 480 480z\" fill=\"currentColor\"/></svg> Free Shipping US &amp; EU</span><span class=\"sw-pdp-guarantee\"><svg class=\"sw-pdp-guarantee__icon\" xmlns=\"http://www.w3.org/2000/svg\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" viewBox=\"0 0 512 512\"><path d=\"M148.7 443.3l-144-144C1.563 296.2 0 292.1 0 288s1.562-8.188 4.688-11.31l144-144c6.25-6.25 16.38-6.25 22.62 0s6.25 16.38 0 22.62L54.63 272H432C458.5 272 480 250.5 480 224V48C480 39.16 487.2 32 496 32S512 39.16 512 48v175.1C512 268.1 476.1 304 432 304H54.63l116.7 116.7c6.25 6.25 6.25 16.38 0 22.62S154.9 449.6 148.7 443.3z\" fill=\"currentColor\"/></svg> 30-Day Returns</span><span class=\"sw-pdp-guarantee\"><svg class=\"sw-pdp-guarantee__icon\" xmlns=\"http://www.w3.org/2000/svg\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" viewBox=\"0 0 448 512\"><path d=\"M384 223.1l-32 0V127.1c0-70.59-57.41-127.1-128-127.1S96 57.41 96 127.1v95.1L64 223.1c-35.35 0-64 28.65-64 64v160c0 35.35 28.65 64 64 64h320c35.35 0 64-28.65 64-64v-160C448 252.7 419.3 223.1 384 223.1zM128 128c0-52.94 43.06-96 96-96s96 43.06 96 96v96H128V128zM416 448c0 17.64-14.36 32-32 32H64c-17.64 0-32-14.36-32-32V288c0-17.64 14.36-32 32-32h320c17.64 0 32 14.36 32 32V448zM224 319.1c-8.844 0-16 7.156-16 16v64c0 8.844 7.156 15.1 16 15.1S240 408.8 240 400v-64C240 327.2 232.8 319.1 224 319.1z\" fill=\"currentColor\"/></svg> Secure Checkout</span><span class=\"sw-pdp-guarantee\"><svg class=\"sw-pdp-guarantee__icon\" xmlns=\"http://www.w3.org/2000/svg\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" viewBox=\"0 0 512 512\"><path d=\"M0 353.9c0 12.28 4.686 24.57 14.06 33.94l110.1 110.1C133.5 507.3 145.8 512 158.1 512S182.6 507.3 192 497.9l305.9-302.9C507.3 185.7 512 173.4 512 161.1c0-12.28-4.686-24.57-14.06-33.94l-110.1-113.1C378.5 4.686 366.2 0 353.9 0S329.4 4.686 320 14.06L14.06 320C4.686 329.4 0 341.7 0 353.9zM74.98 301.3l45.26 45.25c3.127 3.127 7.22 4.672 11.31 4.672c9.121 0 15.99-7.443 15.99-15.99c0-4.093-1.546-8.186-4.673-11.31L97.61 278.6l45.25-45.25l45.26 45.25c3.127 3.127 7.219 4.673 11.31 4.673c8.542 0 15.99-6.87 15.99-15.99c0-4.093-1.545-8.188-4.672-11.31L165.5 210.7l45.25-45.25L256 210.7c3.127 3.127 7.221 4.672 11.31 4.672c9.121 0 15.99-7.443 15.99-15.99c0-4.093-1.547-8.188-4.673-11.31L233.4 142.9l45.25-45.25l45.26 45.25c3.127 3.127 7.22 4.672 11.31 4.672c9.121 0 15.99-7.443 15.99-15.99c0-4.093-1.546-8.186-4.673-11.31l-45.25-45.26l41.37-38.29c3.119-3.119 7.216-4.679 11.31-4.679s8.195 1.56 11.31 4.679l110.1 113.1c3.119 3.119 4.679 7.216 4.679 11.31c0 4.097-1.56 8.195-4.679 11.31l-305.9 302.9c-3.119 3.119-7.216 4.679-11.31 4.679s-8.195-1.56-11.31-4.679l-110.1-110.1c-3.119-3.119-4.679-7.216-4.679-11.31s1.56-8.195 4.679-11.31L74.98 301.3z\" fill=\"currentColor\"/></svg> 2.5 cm Real Depth</span></div>"
           }
         },
         "separator_1": {
@@ -85,7 +85,7 @@
         "collapsible_tab_details": {
           "type": "collapsible_tab",
           "settings": {
-            "icon": "none",
+            "icon": "clipboard",
             "heading": "Product Details",
             "content": "<p><strong>Material:</strong> High-density expanded polystyrene (EPS)<br/><strong>Panel Size:</strong> 100 cm × 50 cm (0.5 m² per panel)<br/><strong>Thickness:</strong> 2–2.5 cm of solid architectural depth<br/><strong>Weight:</strong> Ultra-lightweight, approx. 100–200 g per panel<br/><strong>Fire Rating:</strong> Self-extinguishing material<br/><strong>Moisture Resistance:</strong> Water-resistant — suitable for kitchens, bathrooms, and outdoor use</p>",
             "page": "",
@@ -96,7 +96,7 @@
         "collapsible_tab_thickness": {
           "type": "collapsible_tab",
           "settings": {
-            "icon": "none",
+            "icon": "ruler",
             "heading": "2.5 cm Architectural Depth",
             "content": "<p>Each panel is 2–2.5 cm of solid material — genuine 3D depth, not a flat print or peel-and-stick surface. The raised pattern creates real shadow lines that shift with light, giving your wall the appearance of authentic masonry. This is not wallpaper.</p>",
             "page": "",
@@ -107,7 +107,7 @@
         "collapsible_tab_install": {
           "type": "collapsible_tab",
           "settings": {
-            "icon": "none",
+            "icon": "check_mark",
             "heading": "Installation Guide",
             "content": "<p><strong>Step 1:</strong> Clean and dry your wall surface.<br/><strong>Step 2:</strong> Apply construction adhesive to the back of each panel.<br/><strong>Step 3:</strong> Press firmly onto the wall and hold for 30 seconds.</p><p><em>Trim panels with a utility knife at edges. Optional: fix with screws for extra hold. Paint with any standard wall paint for a custom finish.</em></p>",
             "page": "",
@@ -118,7 +118,7 @@
         "collapsible_tab_shipping": {
           "type": "collapsible_tab",
           "settings": {
-            "icon": "none",
+            "icon": "truck",
             "heading": "Shipping Info",
             "content": "<p>Manufacturing takes 2-3 days. Delivery generally takes 3-5 business days. Free shipping to the US and EU. Panels ship flat and lightweight. US, UK, EU, and Canada residents do not pay customs fees or import taxes.</p>",
             "page": "",
@@ -129,7 +129,7 @@
         "collapsible_tab_faq": {
           "type": "collapsible_tab",
           "settings": {
-            "icon": "none",
+            "icon": "question_mark",
             "heading": "FAQ",
             "content": "<p><strong>Can I paint these?</strong><br/>Yes — any standard interior wall paint works. Use a roller or spray for best results.</p><p><strong>Outdoor use?</strong><br/>Yes. Our panels are moisture-resistant and weather-resistant.</p><p><strong>How many panels per m²?</strong><br/>Each panel covers 0.5 m² (100cm x 50cm), so 2 panels per square meter.</p><p><strong>How do I cut them?</strong><br/>A standard box cutter or utility knife cuts through easily along a straight edge.</p>",
             "page": "",

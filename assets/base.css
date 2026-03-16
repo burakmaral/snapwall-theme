@@ -4188,11 +4188,21 @@ details em:not(.highlighted-text),
 }
 
 .sw-pdp-guarantee {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
   font-family: var(--font-body-family);
   font-size: 1.2rem;
   font-weight: 500;
   letter-spacing: 0.02em;
   color: var(--snapwall-text-muted);
+}
+
+.sw-pdp-guarantee__icon {
+  width: 1.4rem;
+  height: 1.4rem;
+  flex-shrink: 0;
+  color: rgb(var(--color-accent, 107, 124, 94));
 }
 
 /* --- Variant Labels --- */

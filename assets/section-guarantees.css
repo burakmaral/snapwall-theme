@@ -120,9 +120,9 @@
   }
 }
 
-/* Snapwall editorial guarantees */
+/* Snapwall editorial guarantees — styled to match value-propositions */
 .guarantees--editorial {
-  border: 0.1rem solid rgba(var(--color-foreground), 0.08);
+  border: none;
 }
 
 .guarantees--editorial .guarantees__header {
@@ -131,6 +131,18 @@
 
 .guarantees--editorial .guarantees__column {
   display: flex;
+  position: relative;
+}
+
+/* Vertical divider between columns (not on last) */
+.guarantees--editorial .guarantees__column:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  top: 20%;
+  right: 0;
+  height: 60%;
+  width: 1px;
+  background-color: rgba(var(--color-foreground), 0.08);
 }
 
 .guarantee__item--editorial {
@@ -138,37 +150,77 @@
 }
 
 .guarantee__shell {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
   width: 100%;
-  padding: 2.2rem;
-  background-color: rgba(var(--color-background), 0.72);
-  border: 0.1rem solid rgba(var(--color-foreground), 0.08);
-  box-shadow: 0 1.4rem 3rem rgba(var(--color-foreground), 0.06);
+  padding: clamp(2.4rem, 3.5vw, 4rem) clamp(2rem, 3vw, 3.6rem);
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
 }
 
 .guarantee__icon-wrap {
-  display: inline-flex;
-  align-items: flex-start;
+  display: flex;
+  align-items: center;
   justify-content: center;
+  width: 4.4rem;
+  height: 4.4rem;
+  flex-shrink: 0;
+  color: rgb(var(--color-icon, var(--color-foreground)));
+}
+
+.guarantees--editorial .guarantee__icon-wrap svg {
+  width: 2.8rem;
+  height: 2.8rem;
+  stroke-width: 0;
 }
 
 .guarantee__content {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: 0.8rem;
 }
 
 .guarantee__title {
   margin: 0;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
 }
 
-.guarantee__text {
+.guarantees--editorial .guarantee__text {
   margin-top: 0;
+  font-size: 1.35rem;
+  line-height: 1.6;
+  color: rgba(var(--color-foreground), 0.65);
+}
+
+@media screen and (max-width: 989px) and (min-width: 750px) {
+  /* Remove right divider on even items (end of row) for 2-col tablet */
+  .guarantees--editorial .guarantees__column:nth-child(2n)::after {
+    display: none;
+  }
+
+  /* Add bottom border on first row */
+  .guarantees--editorial .guarantees__column:nth-child(-n+2) {
+    border-bottom: 1px solid rgba(var(--color-foreground), 0.08);
+  }
 }
 
 @media screen and (max-width: 749px) {
   .guarantee__shell {
-    grid-template-columns: 1fr;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 1.6rem;
+    padding: 2rem 0;
+  }
+
+  .guarantees--editorial .guarantees__column::after {
+    display: none !important;
+  }
+
+  .guarantees--editorial .guarantees__column:not(:last-child) {
+    border-bottom: 1px solid rgba(var(--color-foreground), 0.08);
   }
 }
