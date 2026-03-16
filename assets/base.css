@@ -4157,6 +4157,15 @@ details em:not(.highlighted-text),
   font-size: 1.4rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  --color-button-background: 20, 18, 17;
+  --color-button-text: 250, 248, 245;
+  --color-button-border: 20, 18, 17;
+}
+
+@media screen and (hover: hover) {
+  .product-main--editorial .product-form__submit:hover {
+    --color-button-background: 50, 47, 44;
+  }
 }
 
 /* Dynamic checkout button — match ATC width */
@@ -4203,6 +4212,34 @@ details em:not(.highlighted-text),
   height: 1.4rem;
   flex-shrink: 0;
   color: rgb(var(--color-accent, 107, 124, 94));
+}
+
+/* --- Spec Row (product buy box) --- */
+.sw-spec-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.6rem;
+  padding: 1.2rem 0;
+  border-top: 1px solid rgba(var(--color-foreground), 0.08);
+  border-bottom: 1px solid rgba(var(--color-foreground), 0.08);
+  margin: 0.4rem 0;
+}
+
+.sw-spec-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  color: rgba(var(--color-foreground), 0.7);
+}
+
+.sw-spec-item__icon {
+  width: 1.4rem;
+  height: 1.4rem;
+  flex-shrink: 0;
+  color: rgba(var(--color-foreground), 0.45);
 }
 
 /* --- Variant Labels --- */
