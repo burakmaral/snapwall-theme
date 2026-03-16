@@ -134,129 +134,59 @@
         "padding_bottom": 52
       }
     },
-    "dual_scroll_story": {
-      "type": "dual-scroll",
+    "room_collage": {
+      "type": "collage",
       "blocks": {
-        "ds_intro": {
-          "type": "slide",
+        "collage_kitchen": {
+          "type": "image",
           "settings": {
-            "title": "Not Wallpaper. Not Tile. Real Depth.",
-            "heading_size": "h0",
-            "description": "<p>2.5 cm of architectural texture that catches light and casts real shadow — exactly like masonry. Premium 3D panels that are lightweight, cut with a utility knife, and installed in a single afternoon.</p><p>✔ 2.5 cm true depth<br/>✔ Lightweight — no structural work<br/>✔ Installs with adhesive<br/>✔ Indoor and outdoor rated<br/>✔ Ships flat, worldwide</p>",
-            "text_size": "typeset2",
-            "secondary_color": false,
-            "enable_highlight": false,
-            "highlight_style": "marker",
-            "highlight_color": "#ffb503",
-            "button_label": "Shop All Panels",
-            "button_size": "medium",
-            "button_link": "shopify://collections/all",
-            "image": "shopify://shop_images/01_1500x1500-2.jpg",
-            "media_background_color": "#f0ece6"
-          }
-        },
-        "ds_restaurant": {
-          "type": "slide",
-          "settings": {
-            "title": "Kitchen",
-            "heading_size": "h1",
-            "description": "<p>Create a warm, inviting atmosphere that makes diners linger. Brick panels add character without the cost of a full renovation.</p>",
-            "text_size": "typeset2",
-            "secondary_color": false,
-            "enable_highlight": false,
-            "highlight_style": "marker",
-            "highlight_color": "#ffb503",
-            "button_label": "",
-            "button_size": "medium",
-            "button_link": "",
             "image": "shopify://shop_images/babelia4_1500x1500_b950367b-11f7-432c-96a8-116fed32e2e7.jpg",
-            "media_background_color": "#f0ece6"
+            "heading": "Kitchen",
+            "link": "shopify://collections/all",
+            "enable_highlight": false,
+            "highlight_style": "marker"
           }
         },
-        "ds_office": {
-          "type": "slide",
+        "collage_outdoor": {
+          "type": "image",
           "settings": {
-            "title": "Office",
-            "heading_size": "h1",
-            "description": "<p>Turn a plain office wall into a design statement. Professional look, zero disruption to the workday.</p>",
-            "text_size": "typeset2",
-            "secondary_color": false,
-            "enable_highlight": false,
-            "highlight_style": "marker",
-            "highlight_color": "#ffb503",
-            "button_label": "",
-            "button_size": "medium",
-            "button_link": "",
-            "image": "shopify://shop_images/Image00001-3.jpg",
-            "media_background_color": "#f0ece6"
-          }
-        },
-        "ds_outdoor": {
-          "type": "slide",
-          "settings": {
-            "title": "Outdoor",
-            "heading_size": "h1",
-            "description": "<p>Weather-resistant panels that transform patios, terraces, and garden walls. Real depth that holds up to the elements.</p>",
-            "text_size": "typeset2",
-            "secondary_color": false,
-            "enable_highlight": false,
-            "highlight_style": "marker",
-            "highlight_color": "#ffb503",
-            "button_label": "",
-            "button_size": "medium",
-            "button_link": "",
             "image": "shopify://shop_images/silverspark6_1125x1500_7cab741b-8a2e-49c1-9b56-0009ef380f69.jpg",
-            "media_background_color": "#f0ece6"
+            "heading": "Outdoor",
+            "link": "shopify://collections/all",
+            "enable_highlight": false,
+            "highlight_style": "marker"
           }
         },
-        "ds_bedroom": {
-          "type": "slide",
+        "collage_bedroom": {
+          "type": "image",
           "settings": {
-            "title": "Bedroom",
-            "heading_size": "h1",
-            "description": "<p>The ultimate accent wall. Create a headboard feature that transforms the entire room in one afternoon.</p>",
-            "text_size": "typeset2",
-            "secondary_color": false,
-            "enable_highlight": false,
-            "highlight_style": "marker",
-            "highlight_color": "#ffb503",
-            "button_label": "",
-            "button_size": "medium",
-            "button_link": "",
             "image": "shopify://shop_images/Image00002.jpg",
-            "media_background_color": "#f0ece6"
+            "heading": "Bedroom",
+            "link": "shopify://collections/all",
+            "enable_highlight": false,
+            "highlight_style": "marker"
           }
         }
       },
       "block_order": [
-        "ds_intro",
-        "ds_restaurant",
-        "ds_office",
-        "ds_outdoor",
-        "ds_bedroom"
+        "collage_kitchen",
+        "collage_outdoor",
+        "collage_bedroom"
       ],
       "settings": {
-        "heading": "",
-        "heading_size": "h1",
-        "heading_tag": "h2",
+        "desktop_layout": "left",
+        "mobile_layout": "collage",
+        "apply_overlay": true,
+        "show_divider": false,
+        "heading": "Every Room. Any Style.",
+        "heading_size": "h0",
         "heading_alignment": "center",
-        "enable_highlight": false,
-        "highlight_style": "marker",
-        "narrow": false,
+        "heading_tag": "h2",
+        "colors_highlight": "#6b7c5e",
         "padding_top": 80,
         "padding_bottom": 80,
-        "heading_color": "#141211",
-        "text_color": "#1e1b18",
-        "description_color": "#7a7168",
-        "panel_background_color": "#faf8f5",
-        "border_color": "#d9d3cb",
-        "button_background_color": "#141211",
-        "button_text_color": "#faf8f5",
-        "highlight_color": "#6b7c5e",
-        "transition_type": "scroll",
-        "media_rotation": 0,
-        "media_scale": 100,
-        "enable_media_shadow": false
+        "enable_highlight": false,
+        "highlight_style": "marker"
       }
     },
     "before_after_slider": {
@@ -667,7 +597,7 @@
   "order": [
     "hero",
     "value_props",
-    "dual_scroll_story",
+    "room_collage",
     "before_after_slider",
     "featured_collection",
     "thickness_explainer",
