@@ -225,7 +225,7 @@
         "mobile_image_ratio": "300px",
         "full_width": false,
         "show_divider": false,
-        "heading": "See the Transformation",
+        "heading": "See the <span class=\"text-highlight\">Transformation</span>",
         "heading_size": "h0",
         "heading_alignment": "center",
         "heading_tag": "h2",
@@ -276,7 +276,7 @@
         "te_heading": {
           "type": "heading",
           "settings": {
-            "heading": "2.5 cm of Architectural Depth",
+            "heading": "2.5 cm of Architectural <span class=\"text-highlight\">Depth</span>",
             "heading_size": "h0",
             "heading_tag": "h2",
             "enable_highlight": false,

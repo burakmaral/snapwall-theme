@@ -4242,6 +4242,26 @@ details em:not(.highlighted-text),
   color: rgba(var(--color-foreground), 0.45);
 }
 
+/* --- Handwritten brush-stroke underline highlight --- */
+.text-highlight {
+  position: relative;
+  display: inline;
+  white-space: nowrap;
+}
+
+.text-highlight::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -0.06em;
+  height: 0.18em;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjAwIDEyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0yLDggQzMwLDMgNjAsMTEgMTAwLDYgQzE0MCwxIDE3MCw5IDE5OCw1IiBzdHJva2U9IiM2QjdDNUUiIHN0cm9rZS13aWR0aD0iMyIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PC9zdmc+");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  pointer-events: none;
+}
+
 /* --- Variant Labels --- */
 .product-main--editorial .product-form__input .form__label {
   font-family: var(--font-heading-family);
