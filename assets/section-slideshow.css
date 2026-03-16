@@ -6,6 +6,8 @@
   align-items: center;
   justify-content: space-between;
   background-color: rgb(var(--color-background));
+  /* CLS fix: reserve height before images load */
+  min-height: var(--image-height, 56.25vw);
 }
 
 .slideshow__left,
@@ -353,6 +355,8 @@
   margin-bottom: 0;
   line-height: 1;
   letter-spacing: 0.02em;
+  /* CLS fix: stable dimensions before web font loads */
+  min-height: 1lh;
 }
 
 @media screen and (min-width: 750px) {

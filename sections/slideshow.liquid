@@ -93,6 +93,13 @@
 
 {{ 'section-slideshow.css' | asset_url | stylesheet_tag }}
 
+{%- comment -%} PageSpeed: preload LCP hero image for the first slideshow on homepage {%- endcomment -%}
+{%- if request.page_type == 'index' and section.index == 1 and first_block -%}
+  {%- if first_block.settings.image != blank -%}
+    <link rel="preload" as="image" href="{{ first_block.settings.image | image_url: width: 1500 }}" imagesrcset="{{ first_block.settings.image | image_url: width: 375 }} 375w, {{ first_block.settings.image | image_url: width: 750 }} 750w, {{ first_block.settings.image | image_url: width: 1100 }} 1100w, {{ first_block.settings.image | image_url: width: 1500 }} 1500w, {{ first_block.settings.image | image_url: width: 1780 }} 1780w, {{ first_block.settings.image | image_url: width: 2000 }} 2000w, {{ first_block.settings.image | image_url: width: 3000 }} 3000w, {{ first_block.settings.image | image_url: width: 3840 }} 3840w" imagesizes="100vw" fetchpriority="high">
+  {%- endif -%}
+{%- endif -%}
+
 <div class="page-width{% if section.settings.full_width %} page-width--full-width{% endif %} section--padding{% if editorial_hero %} slideshow-shell slideshow-shell--editorial{% endif %}">
   {%- if section.blocks.size > 1 -%}
     <slideshow-component id="Slideshow-{{ section.id }}" class="slideshow slideshow--{{ section.settings.slideshow_type }} slideshow--{{ section.settings.image_ratio }} slideshow--mobile-{{ section.settings.mobile_image_ratio }}{% unless section.settings.show_text_below %} slideshow--mobile-overlay{% endunless %}{% if editorial_hero %} slideshow--editorial-hero{% endif %}" data-autorotate="{{ section.settings.autorotate }}" data-autorotate-speed="{{ section.settings.autorotate_speed | times: 1000 }}">
@@ -328,7 +335,7 @@
         <div class="slideshow__slide is-selected" {{ block.shopify_attributes }}>
           {%- case block.type -%}
             {%- when 'image' -%}
-              {% render 'slide-image', block: block, position: 1, image_behavior: image_behavior %}
+              {% render 'slide-image', block: block, position: 1, image_behavior: image_behavior, loading: 'eager', fetchpriority: 'high' %}
             {%- when 'video' -%}
               {% render 'slide-video', block: block, position: 1, image_behavior: image_behavior, section: section, lazy: false %}
           {%- endcase -%}

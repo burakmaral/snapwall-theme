@@ -12,15 +12,21 @@
       {%- endif -%}
       {%- liquid
         assign img_decoding = 'async'
-        if loading == 'eager'
-          assign img_decoding = 'auto'
-        endif
-        
+
         if block.settings.image_mobile == blank
-          echo block.settings.image | image_url: width: 3840 | image_tag: loading: loading, fetchpriority: fetchpriority, decoding: img_decoding, sizes: sizes, widths: widths, is: 'lazy-image'
+          if loading == 'eager'
+            echo block.settings.image | image_url: width: 3840 | image_tag: loading: loading, fetchpriority: fetchpriority, decoding: img_decoding, sizes: sizes, widths: widths
+          else
+            echo block.settings.image | image_url: width: 3840 | image_tag: loading: loading, fetchpriority: fetchpriority, decoding: img_decoding, sizes: sizes, widths: widths, is: 'lazy-image'
+          endif
         else
-          echo block.settings.image_mobile | image_url: width: 3840 | image_tag: loading: loading, fetchpriority: fetchpriority, decoding: img_decoding, class: 'medium-hide large-up-hide', sizes: sizes, widths: widths, is: 'lazy-image'
-          echo block.settings.image | image_url: width: 3840 | image_tag: loading: loading, fetchpriority: fetchpriority, decoding: img_decoding, class: 'small-hide', sizes: sizes, widths: widths, is: 'lazy-image'
+          if loading == 'eager'
+            echo block.settings.image_mobile | image_url: width: 3840 | image_tag: loading: loading, fetchpriority: fetchpriority, decoding: img_decoding, class: 'medium-hide large-up-hide', sizes: sizes, widths: widths
+            echo block.settings.image | image_url: width: 3840 | image_tag: loading: loading, fetchpriority: fetchpriority, decoding: img_decoding, class: 'small-hide', sizes: sizes, widths: widths
+          else
+            echo block.settings.image_mobile | image_url: width: 3840 | image_tag: loading: loading, fetchpriority: fetchpriority, decoding: img_decoding, class: 'medium-hide large-up-hide', sizes: sizes, widths: widths, is: 'lazy-image'
+            echo block.settings.image | image_url: width: 3840 | image_tag: loading: loading, fetchpriority: fetchpriority, decoding: img_decoding, class: 'small-hide', sizes: sizes, widths: widths, is: 'lazy-image'
+          endif
         endif
       -%}
       </div>

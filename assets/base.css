@@ -2782,6 +2782,9 @@ input[type=checkbox] {
   grid-area: icons;
   justify-self: end;
   margin-inline-end: -1.5rem;
+  /* CLS fix: reserve space for icon buttons */
+  min-width: 10rem;
+  min-height: 3.4rem;
 }
 
 .header__icon:not(.header__icon--summary),

@@ -376,7 +376,9 @@
             {%- if mobile_logo -%}
               <img srcset="{{ mobile_logo | image_url: height: mobile_logo_height }} 1x, {{ mobile_logo | image_url: height: mobile_logo_height_2x }} 2x"
                 src="{{ mobile_logo | image_url: height: mobile_logo_height }}"
-                loading="lazy"
+                loading="eager"
+                fetchpriority="high"
+                decoding="async"
                 width="{{ mobile_logo.width }}"
                 height="{{ mobile_logo.height }}"
                 alt="{{ mobile_logo.alt | default: shop.name | escape }}"
@@ -386,7 +388,9 @@
 
             <img srcset="{{ logo | image_url: height: logo_height }} 1x, {{ logo | image_url: height: logo_height_2x }} 2x"
               src="{{ logo | image_url: height: logo_height }}"
-              loading="lazy"
+              loading="eager"
+              fetchpriority="high"
+              decoding="async"
               width="{{ logo.width }}"
               height="{{ logo.height }}"
               alt="{{ logo.alt | default: shop.name | escape }}"
@@ -398,7 +402,9 @@
                 <img
                   srcset="{{ mobile_transparent_logo | image_url: height: mobile_logo_height }} 1x, {{ mobile_transparent_logo | image_url: height: mobile_logo_height_2x }} 2x"
                   src="{{ mobile_transparent_logo | image_url: height: mobile_logo_height }}"
-                  loading="lazy"
+                  loading="eager"
+                  fetchpriority="high"
+                  decoding="async"
                   width="{{ mobile_transparent_logo.width }}"
                   height="{{ mobile_transparent_logo.height }}"
                   alt="{{ mobile_transparent_logo.alt | default: shop.name | escape }}"
@@ -409,7 +415,9 @@
               <img
                 srcset="{{ transparent_logo | image_url: height: logo_height }} 1x, {{ transparent_logo | image_url: height: logo_height_2x }} 2x"
                 src="{{ transparent_logo | image_url: height: logo_height }}"
-                loading="lazy"
+                loading="eager"
+                fetchpriority="high"
+                decoding="async"
                 width="{{ transparent_logo.width }}"
                 height="{{ transparent_logo.height }}"
                 alt="{{ transparent_logo.alt | default: shop.name | escape }}"
