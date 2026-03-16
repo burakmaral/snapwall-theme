@@ -15,7 +15,7 @@
         "hero_slide_1": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/snapwall-strafor-wall-panels-decorated-an-outdoor.png",
+            "image": "shopify://shop_images/01_1500x1500_fafa45d9-f484-46bb-9ab9-529a96c2201b.jpg",
             "image_position": "center center",
             "text_box_position": "middle-left",
             "subheading": "",
@@ -151,13 +151,14 @@
             "button_label": "Shop All Panels",
             "button_size": "medium",
             "button_link": "shopify://collections/all",
+            "image": "shopify://shop_images/01_1500x1500-2.jpg",
             "media_background_color": "#f0ece6"
           }
         },
         "ds_restaurant": {
           "type": "slide",
           "settings": {
-            "title": "Restaurant",
+            "title": "Kitchen",
             "heading_size": "h1",
             "description": "<p>Create a warm, inviting atmosphere that makes diners linger. Brick panels add character without the cost of a full renovation.</p>",
             "text_size": "typeset2",
@@ -168,6 +169,7 @@
             "button_label": "",
             "button_size": "medium",
             "button_link": "",
+            "image": "shopify://shop_images/babelia4_1500x1500_b950367b-11f7-432c-96a8-116fed32e2e7.jpg",
             "media_background_color": "#f0ece6"
           }
         },
@@ -185,23 +187,7 @@
             "button_label": "",
             "button_size": "medium",
             "button_link": "",
-            "media_background_color": "#f0ece6"
-          }
-        },
-        "ds_kitchen": {
-          "type": "slide",
-          "settings": {
-            "title": "Kitchen",
-            "heading_size": "h1",
-            "description": "<p>Moisture-resistant and easy to clean. The ideal backsplash alternative that installs in hours, not days.</p>",
-            "text_size": "typeset2",
-            "secondary_color": false,
-            "enable_highlight": false,
-            "highlight_style": "marker",
-            "highlight_color": "#ffb503",
-            "button_label": "",
-            "button_size": "medium",
-            "button_link": "",
+            "image": "shopify://shop_images/Image00001-3.jpg",
             "media_background_color": "#f0ece6"
           }
         },
@@ -219,6 +205,7 @@
             "button_label": "",
             "button_size": "medium",
             "button_link": "",
+            "image": "shopify://shop_images/silverspark6_1125x1500_7cab741b-8a2e-49c1-9b56-0009ef380f69.jpg",
             "media_background_color": "#f0ece6"
           }
         },
@@ -236,6 +223,7 @@
             "button_label": "",
             "button_size": "medium",
             "button_link": "",
+            "image": "shopify://shop_images/Image00002.jpg",
             "media_background_color": "#f0ece6"
           }
         }
@@ -244,7 +232,6 @@
         "ds_intro",
         "ds_restaurant",
         "ds_office",
-        "ds_kitchen",
         "ds_outdoor",
         "ds_bedroom"
       ],
@@ -278,7 +265,7 @@
         "ba_before": {
           "type": "look",
           "settings": {
-            "image": "shopify://shop_images/2_d7f82465-e608-4c5a-94ea-907e4d10acc1.jpg",
+            "image": "shopify://shop_images/unnamed_3.jpg",
             "title": "Before",
             "title_size": "small",
             "title_position": "end",
@@ -289,7 +276,7 @@
         "ba_after": {
           "type": "look",
           "settings": {
-            "image": "shopify://shop_images/1.jpg",
+            "image": "shopify://shop_images/01_1500x1500-3.jpg",
             "title": "After",
             "title_size": "small",
             "title_position": "end",
@@ -395,6 +382,7 @@
         "te_button"
       ],
       "settings": {
+        "image": "shopify://shop_images/thicnkess_430x_0faddb77-fc37-471b-960d-bec84e676251.webp",
         "image_position": "left",
         "layout": "image_first",
         "text_box_position": "middle",
@@ -449,6 +437,7 @@
         "lb_2"
       ],
       "settings": {
+        "image": "shopify://shop_images/Image00003.jpg",
         "full_width": true,
         "show_divider": false,
         "heading": "Every Room. Any Style.",
