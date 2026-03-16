@@ -4248,6 +4248,13 @@ details em:not(.highlighted-text),
   color: rgb(var(--color-base-accent));
 }
 
+/* --- Value props: show circle highlight without animation --- */
+.value-props__text .highlighted-text .icon-scribble path {
+  opacity: 1;
+  stroke-dashoffset: 0;
+  stroke: rgb(var(--color-base-accent));
+}
+
 /* --- Variant Labels --- */
 .product-main--editorial .product-form__input .form__label {
   font-family: var(--font-heading-family);
