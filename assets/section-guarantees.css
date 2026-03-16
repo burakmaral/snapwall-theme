@@ -170,6 +170,15 @@
   color: rgb(var(--color-icon, var(--color-foreground)));
 }
 
+/* Override colored-icon circle: no background in editorial, color the SVG directly */
+.guarantees--editorial.guarantees-icon--colored .guarantee__icon {
+  width: auto;
+  height: auto;
+  border-radius: 0;
+  background-color: transparent;
+  color: rgb(var(--color-icon, var(--color-foreground)));
+}
+
 .guarantees--editorial .guarantee__icon-wrap svg {
   width: 2.8rem;
   height: 2.8rem;
