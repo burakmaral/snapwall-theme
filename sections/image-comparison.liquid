@@ -57,8 +57,9 @@
   <div class="page-width{% if section.settings.full_width %} page-width--full-width{% endif %}">
     <div class="title-wrapper image-comparison-section__header{% if section.settings.heading == blank %} title-wrapper--no-heading{% endif %}{% if section.settings.full_width %} page-width{% endif %} {{ section.settings.heading_alignment }}" data-reveal>
       <{{ section.settings.heading_tag }} class="title {{ section.settings.heading_size }}">
-        {%- assign _hl_heading = section.settings.heading | replace: 'Transformation', '<span class="text-highlight">Transformation</span>' -%}
-        {{- _hl_heading -}}
+        {%- capture _hl_em -%}<em class="highlighted-text" is="highlighted-text" data-style="heavy-squiggle">Transformation{%- render 'icon-scribble', icon: 'heavy-squiggle' -%}</em>{%- endcapture -%}
+        {%- assign _hl_heading = section.settings.heading | replace: 'Transformation', _hl_em -%}
+        <use-animate>{{- _hl_heading -}}</use-animate>
       </{{ section.settings.heading_tag }}>
     </div>
 

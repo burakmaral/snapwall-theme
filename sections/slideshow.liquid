@@ -167,8 +167,9 @@
                 {%- endif -%}
                 {%- if block.settings.heading != blank -%}
                   <{{ block.settings.heading_tag }} class="slideshow__heading {{ block.settings.heading_size }}" data-animate data-animate-delay-{{ animate_delay }}>
-                    {%- render 'highlight-text', 
-                      hl_input: block.settings.heading, 
+                    {%- assign _ss_heading = block.settings.heading | replace: 'Command', '<span class="heading-accent">Command</span>' -%}
+                    {%- render 'highlight-text',
+                      hl_input: _ss_heading,
                       hl_style: block.settings.highlight_style,
                       hl_enable: block.settings.enable_highlight,
                       hl_animateWrap: true -%}
@@ -272,8 +273,9 @@
                 {%- endif -%}
                 {%- if block.settings.heading != blank -%}
                   <{{ block.settings.heading_tag }} class="slideshow__heading {{ block.settings.heading_size }}" data-animate data-animate-delay-{{ animate_delay }}>
-                    {%- render 'highlight-text', 
-                      hl_input: block.settings.heading, 
+                    {%- assign _ss_heading = block.settings.heading | replace: 'Command', '<span class="heading-accent">Command</span>' -%}
+                    {%- render 'highlight-text',
+                      hl_input: _ss_heading,
                       hl_style: block.settings.highlight_style,
                       hl_enable: block.settings.enable_highlight,
                       hl_animateWrap: true -%}

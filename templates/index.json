@@ -23,7 +23,7 @@
             "heading": "Walls That Command Attention",
             "heading_size": "h0",
             "heading_tag": "h1",
-            "text": "Premium 3D wall panels — 2.5 cm of real depth, real shadow, real texture. Installed in an afternoon.",
+            "text": "Premium 3D wall panels — 2.5 cm (≈1 in) of real depth, real shadow, real texture. Installed in an afternoon.",
             "text_size": "typeset2",
             "button_label": "Shop Wall Panels",
             "button_link": "shopify://collections/all",
@@ -73,7 +73,7 @@
           "settings": {
             "icon": "thickness",
             "custom_icon": "",
-            "heading": "2.5 cm True Thickness",
+            "heading": "2.5 cm (≈1 in) True Thickness",
             "heading_size": "h4",
             "text": "<p>Solid architectural panels with real depth that creates true shadow lines — not a flat print or peel-and-stick surface.</p>"
           }
@@ -276,7 +276,7 @@
         "te_heading": {
           "type": "heading",
           "settings": {
-            "heading": "2.5 cm of Architectural Depth",
+            "heading": "2.5 cm (≈1 in) of Architectural Depth",
             "heading_size": "h0",
             "heading_tag": "h2",
             "enable_highlight": false,
@@ -286,7 +286,7 @@
         "te_text": {
           "type": "text",
           "settings": {
-            "text": "<p>These are not peel-and-stick. Not wallpaper. Each panel is 2.5 cm of solid, high-density material that creates true shadow lines and architectural dimension. Applied with construction adhesive, trimmed with a utility knife — the result is indistinguishable from real masonry at a fraction of the cost and weight.</p>",
+            "text": "<p>These are not peel-and-stick. Not wallpaper. Each panel is 2.5 cm (≈1 in) of solid, high-density material that creates true shadow lines and architectural dimension. Applied with construction adhesive, trimmed with a utility knife — the result is indistinguishable from real masonry at a fraction of the cost and weight.</p>",
             "text_size": "typeset2",
             "secondary_color": false,
             "enable_highlight": false,
@@ -522,7 +522,7 @@
           "type": "question",
           "settings": {
             "title": "What sizes are available?",
-            "text": "<p>Our standard panel size is 100cm x 50cm (0.5 m² per panel). Use our coverage calculator on any product page to find exactly how many panels you need for your wall.</p>",
+            "text": "<p>Our standard panel size is 100 cm × 50 cm (39 × 20 in / 0.5 m² per panel). Use our coverage calculator on any product page to find exactly how many panels you need for your wall.</p>",
             "enable_highlight": false,
             "highlight_style": "marker"
           }
