@@ -215,11 +215,8 @@
             {% case block.type %}
               {%- when 'heading' -%}
                 <{{ block.settings.heading_tag }} class="image-with-text__heading {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>
-                  {%- render 'highlight-text', 
-                    hl_input: block.settings.heading, 
-                    hl_style: block.settings.highlight_style,
-                    hl_enable: block.settings.enable_highlight,
-                    hl_animateWrap: true -%}
+                  {%- assign _iwt_heading = block.settings.heading | replace: 'Depth', '<span class="text-highlight">Depth</span>' -%}
+                  {{- _iwt_heading -}}
                 </{{ block.settings.heading_tag }}>
               {%- when 'subheading' -%}
                 <p class="image-with-text__subheading{% if block.settings.secondary_color %} image-with-text__subheading--colored{% endif %} {{ block.settings.subheading_size }}" {{ block.shopify_attributes }}>
