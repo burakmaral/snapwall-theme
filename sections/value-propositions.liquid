@@ -85,7 +85,9 @@
                 {%- endif -%}
                 {%- if block.settings.text != blank -%}
                   <div class="value-props__text rte">
-                    {{- block.settings.text -}}
+                    {%- capture _vp_circle -%}<em class="highlighted-text" is="highlighted-text" data-style="circle">high-density EPS{%- render 'icon-scribble', icon: 'circle' -%}</em>{%- endcapture -%}
+                    {%- assign _vp_text = block.settings.text | replace: 'high-density EPS', _vp_circle -%}
+                    {{- _vp_text -}}
                   </div>
                 {%- endif -%}
               </div>
