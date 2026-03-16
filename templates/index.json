@@ -338,47 +338,88 @@
         "padding_bottom": 80
       }
     },
-    "lookbook_rooms": {
-      "type": "lookbook",
+    "homepage_guarantees": {
+      "type": "guarantees",
       "blocks": {
-        "lb_1": {
-          "type": "look",
+        "hp_guarantee_0": {
+          "type": "guarantee",
           "settings": {
-            "product": "",
-            "enable_quick_view": true,
-            "color": "#ffffff",
-            "horizontal": 25,
-            "vertical": 40
+            "icon": "truck",
+            "icon_size": "medium",
+            "custom_icon": "",
+            "title": "Free Shipping",
+            "title_size": "h4",
+            "text": "<p>Free delivery to the US and EU on all orders.</p>",
+            "enable_highlight": false,
+            "highlight_style": "marker"
           }
         },
-        "lb_2": {
-          "type": "look",
+        "hp_guarantee_1": {
+          "type": "guarantee",
           "settings": {
-            "product": "",
-            "enable_quick_view": true,
-            "color": "#ffffff",
-            "horizontal": 65,
-            "vertical": 55
+            "icon": "return",
+            "icon_size": "medium",
+            "custom_icon": "",
+            "title": "Easy Returns",
+            "title_size": "h4",
+            "text": "<p>30-day hassle-free return policy.</p>",
+            "enable_highlight": false,
+            "highlight_style": "marker"
+          }
+        },
+        "hp_guarantee_2": {
+          "type": "guarantee",
+          "settings": {
+            "icon": "shield",
+            "icon_size": "medium",
+            "custom_icon": "",
+            "title": "Quality Guaranteed",
+            "title_size": "h4",
+            "text": "<p>Handcrafted from high-density polystyrene for lasting quality.</p>",
+            "enable_highlight": false,
+            "highlight_style": "marker"
+          }
+        },
+        "hp_guarantee_3": {
+          "type": "guarantee",
+          "settings": {
+            "icon": "fire",
+            "icon_size": "medium",
+            "custom_icon": "",
+            "title": "Fire Rated",
+            "title_size": "h4",
+            "text": "<p>Self-extinguishing material, safe for residential and commercial use.</p>",
+            "enable_highlight": false,
+            "highlight_style": "marker"
           }
         }
       },
       "block_order": [
-        "lb_1",
-        "lb_2"
+        "hp_guarantee_0",
+        "hp_guarantee_1",
+        "hp_guarantee_2",
+        "hp_guarantee_3"
       ],
       "settings": {
-        "image": "shopify://shop_images/Image00003.jpg",
+        "layout": "default",
+        "column_alignment": "center",
+        "horizontal_content": false,
         "full_width": true,
         "show_divider": false,
-        "heading": "Every Room. Any Style.",
-        "heading_size": "h0",
-        "heading_alignment": "center",
+        "columns_desktop": 4,
+        "heading": "",
+        "heading_size": "h1",
         "heading_tag": "h2",
-        "colors_overlay": "#141211",
-        "colors_overlay_opacity": 8,
-        "colors_highlight": "#6b7c5e",
-        "padding_top": 80,
-        "padding_bottom": 80,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "use_custom_colors": true,
+        "colors_icon": "#6B7C5E",
+        "colors_text": "#1E1B18",
+        "colors_background": "#F0ECE6",
+        "gradient_background": "",
+        "colors_highlight": "#6B7C5E",
+        "padding_top": 36,
+        "padding_bottom": 36,
         "enable_highlight": false,
         "highlight_style": "marker"
       }
@@ -596,12 +637,12 @@
   },
   "order": [
     "hero",
+    "before_after_slider",
     "value_props",
     "room_collage",
-    "before_after_slider",
-    "featured_collection",
     "thickness_explainer",
-    "lookbook_rooms",
+    "featured_collection",
+    "homepage_guarantees",
     "social_proof",
     "homepage_faq",
     "email_capture",
