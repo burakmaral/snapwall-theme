@@ -4036,19 +4036,6 @@ details em:not(.highlighted-text),
   box-shadow: 0 0.2rem 0.6rem rgba(0, 0, 0, 0.1);
 }
 
-/* Center Before/After labels horizontally within each panel */
-.image-comparison--editorial[data-layout=horizontal] .image-comparison__before .image-comparison__title,
-.image-comparison--editorial[data-layout=horizontal] .image-comparison__after .image-comparison__title {
-  left: 50%;
-  right: auto;
-  transform: translateX(-50%);
-}
-
-.image-comparison--editorial[data-layout=horizontal] .image-comparison__item--center .image-comparison__title {
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
-
 /* Smooth slider interaction */
 .image-comparison.animating .image-comparison__after {
   transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
