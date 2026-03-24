@@ -104,7 +104,7 @@
           "type": "question",
           "settings": {
             "title": "Do you do wholesale?",
-            "text": "<p>For over 10 products to the same address we can apply wholesale prices, delivery dates may change for wholesale orders. Check out <a href=\"/pages/wholesale-partnership\" title=\"Wholesale & Partnership\">Whole & Partnership Page</a>.</p>",
+            "text": "<p>For over 10 products to the same address we can apply wholesale prices, delivery dates may change for wholesale orders.</p>",
             "enable_highlight": false,
             "highlight_style": "marker"
           }
