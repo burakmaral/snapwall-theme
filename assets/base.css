@@ -4255,6 +4255,57 @@ details em:not(.highlighted-text),
   stroke: rgb(var(--color-base-accent));
 }
 
+/* --- Read More toggle for product description --- */
+.read-more {
+  display: block;
+  position: relative;
+}
+
+.read-more[data-collapsed] .read-more__content {
+  max-height: 18rem;
+  overflow: hidden;
+}
+
+.read-more__fade {
+  display: none;
+}
+
+.read-more[data-collapsed] .read-more__fade {
+  display: block;
+  position: absolute;
+  bottom: 3.2rem;
+  left: 0;
+  right: 0;
+  height: 6rem;
+  background: linear-gradient(to bottom, transparent, rgb(var(--color-background)));
+  pointer-events: none;
+}
+
+.read-more__btn {
+  display: none;
+  width: 100%;
+  padding: 0.8rem 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: rgb(var(--color-foreground));
+  text-decoration: underline;
+  text-underline-offset: 0.3rem;
+}
+
+.read-more[data-collapsed] .read-more__btn {
+  display: block;
+}
+
+@media screen and (max-width: 749px) {
+  .read-more[data-collapsed] .read-more__content {
+    max-height: 14rem;
+  }
+}
+
 /* --- Variant Labels --- */
 .product-main--editorial .product-form__input .form__label {
   font-family: var(--font-heading-family);

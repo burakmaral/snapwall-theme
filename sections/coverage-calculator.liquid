@@ -157,6 +157,7 @@
         data-product-id="{{ product.selected_or_first_available_variant.id }}"
         data-product-price="{{ product.selected_or_first_available_variant.price }}"
         data-currency="{{ cart.currency.symbol }}"
+        data-variants='[{%- for variant in product.variants -%}{"id":{{ variant.id }},"title":{{ variant.title | json }},"price":{{ variant.price }},"available":{{ variant.available }}}{%- unless forloop.last -%},{%- endunless -%}{%- endfor -%}]'
       >
         <div class="coverage-calc__unit-toggle">
           <button type="button" class="coverage-calc__unit-btn active" data-unit="ft" aria-label="Use feet">FT</button>

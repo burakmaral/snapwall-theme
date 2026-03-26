@@ -1105,7 +1105,13 @@
 
             <div class="product__details-panels">
               <div id="ProductPanel-Overview-{{ section.id }}" class="product__details-panel rte"{% if overview_block != blank %} {{ overview_block.shopify_attributes }}{% endif %}>
-                {{ product.description }}
+                <read-more-toggle class="read-more" data-collapsed>
+                  <div class="read-more__content">
+                    {{ product.description }}
+                  </div>
+                  <div class="read-more__fade"></div>
+                  <button type="button" class="read-more__btn link">Read More</button>
+                </read-more-toggle>
               </div>
               <div id="ProductPanel-Specs-{{ section.id }}" class="product__details-panel rte"{% if specs_block != blank %} {{ specs_block.shopify_attributes }}{% endif %}>
                 {%- if specs_block != blank -%}
@@ -1127,6 +1133,42 @@
       </div>
     </div>
   </div>
+
+  <script>
+    if (!customElements.get('read-more-toggle')) {
+      customElements.define('read-more-toggle', class extends HTMLElement {
+        connectedCallback() {
+          const content = this.querySelector('.read-more__content');
+          const btn = this.querySelector('.read-more__btn');
+          if (!content || !btn) return;
+
+          /* If content is short enough, remove collapsed state immediately */
+          requestAnimationFrame(() => {
+            if (content.scrollHeight <= content.offsetHeight + 2) {
+              this.removeAttribute('data-collapsed');
+            }
+          });
+
+          btn.addEventListener('click', () => {
+            if (this.hasAttribute('data-collapsed')) {
+              this.removeAttribute('data-collapsed');
+              content.style.maxHeight = content.scrollHeight + 'px';
+              btn.textContent = 'Read Less';
+              setTimeout(() => { content.style.maxHeight = ''; }, 350);
+            } else {
+              content.style.maxHeight = content.scrollHeight + 'px';
+              requestAnimationFrame(() => {
+                this.setAttribute('data-collapsed', '');
+                content.style.maxHeight = '';
+                btn.textContent = 'Read More';
+                this.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+              });
+            }
+          });
+        }
+      });
+    }
+  </script>
 
   {% render 'product-media-modal', product: product, variant_images: variant_images %}
 
