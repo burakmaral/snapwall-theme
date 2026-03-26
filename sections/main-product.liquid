@@ -588,7 +588,6 @@
       assign title_block = section.blocks | where: "type", "title" | first
       assign title_block_price = false
       assign overview_block = blank
-      assign specs_block = blank
       assign installation_block = blank
       assign product_descriptor_prefix = product.type | default: '3D Styrofoam Wall Panel'
       assign selected_variant_title = product.selected_or_first_available_variant.title
@@ -614,16 +613,14 @@
             assign overview_block = section_block
           when 'collapsible_tab'
             assign heading_downcase = section_block.settings.heading | strip | downcase
-            if specs_block == blank and heading_downcase contains 'spec'
-              assign specs_block = section_block
-            elsif installation_block == blank and heading_downcase contains 'install'
+            if installation_block == blank and heading_downcase contains 'install'
               assign installation_block = section_block
             endif
         endcase
       endfor
 
       assign has_editorial_tabs = false
-      if overview_block != blank or specs_block != blank or installation_block != blank
+      if overview_block != blank or installation_block != blank
         assign has_editorial_tabs = true
       endif
     -%}
@@ -759,9 +756,7 @@
           {%- when 'collapsible_tab' -%}
             {%- liquid
               assign render_as_editorial_tab = false
-              if has_editorial_tabs and specs_block != blank and block.id == specs_block.id
-                assign render_as_editorial_tab = true
-              elsif has_editorial_tabs and installation_block != blank and block.id == installation_block.id
+              if has_editorial_tabs and installation_block != blank and block.id == installation_block.id
                 assign render_as_editorial_tab = true
               endif
             -%}
@@ -1094,12 +1089,10 @@
         {%- if has_editorial_tabs -%}
           <div id="ProductDetails" class="product__details-tabs product__details-tabs--editorial">
             <input class="product__details-toggle visually-hidden" type="radio" name="ProductTabs-{{ section.id }}" id="ProductTab-Overview-{{ section.id }}" checked>
-            <input class="product__details-toggle visually-hidden" type="radio" name="ProductTabs-{{ section.id }}" id="ProductTab-Specs-{{ section.id }}">
             <input class="product__details-toggle visually-hidden" type="radio" name="ProductTabs-{{ section.id }}" id="ProductTab-Install-{{ section.id }}">
 
             <div class="product__details-nav" role="tablist" aria-label="Product details">
               <label class="product__details-tab" for="ProductTab-Overview-{{ section.id }}" role="tab" aria-controls="ProductPanel-Overview-{{ section.id }}">Overview</label>
-              <label class="product__details-tab" for="ProductTab-Specs-{{ section.id }}" role="tab" aria-controls="ProductPanel-Specs-{{ section.id }}">Specs</label>
               <label class="product__details-tab" for="ProductTab-Install-{{ section.id }}" role="tab" aria-controls="ProductPanel-Install-{{ section.id }}">Installation</label>
             </div>
 
@@ -1112,13 +1105,6 @@
                   <div class="read-more__fade"></div>
                   <button type="button" class="read-more__btn link">Read More</button>
                 </read-more-toggle>
-              </div>
-              <div id="ProductPanel-Specs-{{ section.id }}" class="product__details-panel rte"{% if specs_block != blank %} {{ specs_block.shopify_attributes }}{% endif %}>
-                {%- if specs_block != blank -%}
-                  {{ specs_block.settings.content }}
-                  {{ specs_block.settings.page.content }}
-                  {{ specs_block.settings.custom_liquid }}
-                {%- endif -%}
               </div>
               <div id="ProductPanel-Install-{{ section.id }}" class="product__details-panel rte"{% if installation_block != blank %} {{ installation_block.shopify_attributes }}{% endif %}>
                 {%- if installation_block != blank -%}
