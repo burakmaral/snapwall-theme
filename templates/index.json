@@ -65,6 +65,54 @@
         "padding_bottom": 0
       }
     },
+    "before_after_slider": {
+      "type": "image-comparison",
+      "blocks": {
+        "ba_before": {
+          "type": "look",
+          "settings": {
+            "image": "shopify://shop_images/unnamed_3.jpg",
+            "title": "Before",
+            "title_size": "small",
+            "title_position": "end",
+            "enable_highlight": false,
+            "highlight_style": "marker"
+          }
+        },
+        "ba_after": {
+          "type": "look",
+          "settings": {
+            "image": "shopify://shop_images/01_1500x1500-3.jpg",
+            "title": "After",
+            "title_size": "small",
+            "title_position": "end",
+            "enable_highlight": false,
+            "highlight_style": "marker"
+          }
+        }
+      },
+      "block_order": [
+        "ba_before",
+        "ba_after"
+      ],
+      "settings": {
+        "layout": "horizontal",
+        "image_ratio": "550px",
+        "mobile_image_ratio": "300px",
+        "full_width": false,
+        "show_divider": false,
+        "heading": "See the Transformation",
+        "heading_size": "h0",
+        "heading_alignment": "center",
+        "heading_tag": "h2",
+        "colors_line": "#faf8f5",
+        "colors_highlight": "#6b7c5e",
+        "padding_top": 80,
+        "padding_bottom": 80,
+        "enable_highlight": false,
+        "highlight_style": "marker"
+      }
+    },
     "value_props": {
       "type": "value-propositions",
       "blocks": {
@@ -103,9 +151,9 @@
           "settings": {
             "icon": "diy",
             "custom_icon": "",
-            "heading": "Value proposition",
+            "heading": "Pro Results, DIY Ease",
             "heading_size": "h4",
-            "text": "<p>Description of this value proposition.</p>"
+            "text": "<p>Get the expensive look of professional stone or brickwork in an afternoon. Our lightweight panels glue directly to your wall. No contractors or heavy machinery needed.</p>"
           }
         }
       },
@@ -189,87 +237,6 @@
         "highlight_style": "marker"
       }
     },
-    "before_after_slider": {
-      "type": "image-comparison",
-      "blocks": {
-        "ba_before": {
-          "type": "look",
-          "settings": {
-            "image": "shopify://shop_images/unnamed_3.jpg",
-            "title": "Before",
-            "title_size": "small",
-            "title_position": "end",
-            "enable_highlight": false,
-            "highlight_style": "marker"
-          }
-        },
-        "ba_after": {
-          "type": "look",
-          "settings": {
-            "image": "shopify://shop_images/01_1500x1500-3.jpg",
-            "title": "After",
-            "title_size": "small",
-            "title_position": "end",
-            "enable_highlight": false,
-            "highlight_style": "marker"
-          }
-        }
-      },
-      "block_order": [
-        "ba_before",
-        "ba_after"
-      ],
-      "settings": {
-        "layout": "horizontal",
-        "image_ratio": "550px",
-        "mobile_image_ratio": "300px",
-        "full_width": false,
-        "show_divider": false,
-        "heading": "See the Transformation",
-        "heading_size": "h0",
-        "heading_alignment": "center",
-        "heading_tag": "h2",
-        "colors_line": "#faf8f5",
-        "colors_highlight": "#6b7c5e",
-        "padding_top": 80,
-        "padding_bottom": 80,
-        "enable_highlight": false,
-        "highlight_style": "marker"
-      }
-    },
-    "featured_collection": {
-      "type": "featured-collection",
-      "settings": {
-        "collection": "all",
-        "products_to_show": 4,
-        "horizontal_scroll": false,
-        "show_view_all": true,
-        "show_divider": false,
-        "enable_drag": false,
-        "heading": "Choose Your Style",
-        "heading_size": "h0",
-        "heading_alignment": "center",
-        "heading_tag": "h2",
-        "columns_mobile": "2",
-        "swipe_on_mobile": true,
-        "image_ratio": "square",
-        "image_position": "center center",
-        "enable_image_fill": true,
-        "show_secondary_image": true,
-        "secondary_image_max": 1,
-        "show_vendor": false,
-        "show_rating": true,
-        "show_quick_buy": true,
-        "enable_quick_view": true,
-        "enable_color_swatches": true,
-        "enable_countdown": false,
-        "colors_highlight": "#6b7c5e",
-        "padding_top": 80,
-        "padding_bottom": 80,
-        "enable_highlight": false,
-        "highlight_style": "marker"
-      }
-    },
     "thickness_explainer": {
       "type": "image-with-text",
       "blocks": {
@@ -336,6 +303,39 @@
         "colors_highlight": "#6b7c5e",
         "padding_top": 80,
         "padding_bottom": 80
+      }
+    },
+    "featured_collection": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "all",
+        "products_to_show": 4,
+        "horizontal_scroll": false,
+        "show_view_all": true,
+        "show_divider": false,
+        "enable_drag": false,
+        "heading": "Choose Your Style",
+        "heading_size": "h0",
+        "heading_alignment": "center",
+        "heading_tag": "h2",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "image_ratio": "square",
+        "image_position": "center center",
+        "enable_image_fill": true,
+        "show_secondary_image": true,
+        "secondary_image_max": 1,
+        "show_vendor": false,
+        "show_rating": true,
+        "show_quick_buy": true,
+        "enable_quick_view": true,
+        "enable_color_swatches": true,
+        "enable_countdown": false,
+        "colors_highlight": "#6b7c5e",
+        "padding_top": 80,
+        "padding_bottom": 80,
+        "enable_highlight": false,
+        "highlight_style": "marker"
       }
     },
     "homepage_guarantees": {
@@ -413,11 +413,11 @@
         "columns_mobile": "2",
         "swipe_on_mobile": true,
         "use_custom_colors": true,
-        "colors_icon": "#6B7C5E",
-        "colors_text": "#1E1B18",
-        "colors_background": "#F0ECE6",
+        "colors_icon": "#6b7c5e",
+        "colors_text": "#1e1b18",
+        "colors_background": "#f0ece6",
         "gradient_background": "",
-        "colors_highlight": "#6B7C5E",
+        "colors_highlight": "#6b7c5e",
         "padding_top": 36,
         "padding_bottom": 36,
         "enable_highlight": false,
