@@ -443,21 +443,12 @@
               </svg>
             </add-to-cart>
           {%- else -%}
-            {%- if settings.quick_view_enabled and enable_quick_view -%}
-              <quick-view-button class="{{ button_class }} card__quick-buy" data-product-url="{{ card_url }}">
+            <a href="{{ card_url }}" class="{{ button_class }} card__quick-buy" tabindex="-1">
                 {{ 'products.product.choose_options' | t }}
                 <svg class="icon icon-cart" aria-hidden="true" focusable="false">
                   <use href="#icon-cart"></use>
                 </svg>
-              </quick-view-button>
-            {%- else -%}
-              <a href="{{ card_url }}" class="{{ button_class }} card__quick-buy" tabindex="-1">
-                {{ 'products.product.view' | t }}
-                <svg class="icon icon-cart" aria-hidden="true" focusable="false">
-                  <use href="#icon-cart"></use>
-                </svg>
               </a>
-            {%- endif -%}
           {%- endif -%}
         {%- endif -%}
       {%- else -%}
@@ -516,17 +507,4 @@
     {%- endif -%}
   </div>
 
-  {%- if settings.quick_view_enabled and enable_quick_view -%}
-    <quick-view-drawer>
-      <details>
-        <summary class="quick-view__summary" tabindex="-1">
-          <span class="visually-hidden">{{ 'products.product.quick_view' | t }}</span>
-          {% render 'icon', icon: 'search-alt' %}
-        </summary>
-        <quick-view class="quick-view" data-product-url="{{ card_url }}">
-          <div role="dialog" aria-label="{{ 'products.product.choose_product_options' | t: product_name: card_product.title | escape }}" aria-modal="true" class="quick-view__content" tabindex="-1"></div>
-        </quick-view>
-      </details>
-    </quick-view-drawer>
-  {%- endif -%}
 </div>
