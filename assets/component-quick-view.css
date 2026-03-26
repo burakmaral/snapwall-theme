@@ -10,6 +10,16 @@
 
 .js quick-view-drawer {
   display: block;
+  position: static;
+}
+
+.js quick-view-drawer > details > .quick-view {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  height: 100dvh;
 }
 
 .quick-view__summary {
